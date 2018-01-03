@@ -1,0 +1,34 @@
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\IService.dll
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\IService.pdb
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\IDal.dll
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\Model.dll
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\EntityFramework.dll
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\IDal.pdb
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\Model.pdb
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\EntityFramework.xml
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\zh-Hans\EntityFramework.resources.dll
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\obj\Release\IService.csprojResolveAssemblyReference.cache
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\obj\Release\IService.dll
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\obj\Release\IService.pdb
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\Newtonsoft.Json.dll
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\Newtonsoft.Json.xml
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\Dal.dll
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\EntityFramework.Extended.dll
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\Dal.pdb
+d:\用户目录\我的文档\visual studio 2013\Projects\ModelMall\IService\bin\Release\EntityFramework.Extended.xml
+G:\Git\DevelopmentFramework\IService\bin\Release\IService.dll
+G:\Git\DevelopmentFramework\IService\bin\Release\IService.pdb
+G:\Git\DevelopmentFramework\IService\bin\Release\Dal.dll
+G:\Git\DevelopmentFramework\IService\bin\Release\IDal.dll
+G:\Git\DevelopmentFramework\IService\bin\Release\Model.dll
+G:\Git\DevelopmentFramework\IService\bin\Release\EntityFramework.dll
+G:\Git\DevelopmentFramework\IService\bin\Release\EntityFramework.Extended.dll
+G:\Git\DevelopmentFramework\IService\bin\Release\Dal.pdb
+G:\Git\DevelopmentFramework\IService\bin\Release\IDal.pdb
+G:\Git\DevelopmentFramework\IService\bin\Release\Model.pdb
+G:\Git\DevelopmentFramework\IService\bin\Release\EntityFramework.xml
+G:\Git\DevelopmentFramework\IService\bin\Release\EntityFramework.Extended.xml
+G:\Git\DevelopmentFramework\IService\bin\Release\zh-Hans\EntityFramework.resources.dll
+G:\Git\DevelopmentFramework\IService\obj\Release\IService.csprojResolveAssemblyReference.cache
+G:\Git\DevelopmentFramework\IService\obj\Release\IService.dll
+G:\Git\DevelopmentFramework\IService\obj\Release\IService.pdb
