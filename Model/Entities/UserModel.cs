@@ -21,9 +21,9 @@ namespace Model
         /// </summary>
         public string Pwd { get; set; }
         /// <summary>
-        /// 昵称
+        /// 类型 1:用户，2：管理员
         /// </summary>
-        public string NickName { get; set; }
+        public int Type { get; set; }
         /// <summary>
         /// 电话
         /// </summary>

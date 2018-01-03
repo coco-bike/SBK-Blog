@@ -6,11 +6,10 @@ using System.Web.Mvc;
 
 namespace UI.Areas.Admin.Controllers
 {
-    public class LoginController : Controller
+    public class AdminLoginController : Controller
     {
         //
         // GET: /Admin/Login/
-
         public ActionResult Index()
         {
             return View();

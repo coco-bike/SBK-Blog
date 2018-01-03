@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace UI.Areas.Admin.Controllers
 {
-    public class RoleController : Controller
+    public class AdminRoleController : Controller
     {
         //
         // GET: /Admin/Role/

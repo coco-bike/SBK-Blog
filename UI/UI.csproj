@@ -151,10 +151,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\AuthorityController.cs" />
-    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
-    <Compile Include="Areas\Admin\Controllers\RoleController.cs" />
-    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminAuthorityController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminLoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminRoleController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminUserController.cs" />
     <Compile Include="Areas\Web\Controllers\HomeController.cs" />
     <Compile Include="Areas\Web\WebAreaRegistration.cs">
       <SubType>Code</SubType>
@@ -238,6 +238,8 @@
     <None Include="Properties\PublishProfiles\32FSDF.pubxml" />
     <None Include="Properties\PublishProfiles\sss.pubxml" />
     <None Include="Properties\PublishProfiles\啊啊啊.pubxml" />
+    <Content Include="Imgs\HeadPic\headpic-1.jpg" />
+    <Content Include="Imgs\HeadPic\headpic-2.jpg" />
     <Content Include="Libs\Common.Logging.dll" />
     <Content Include="Libs\log4net.dll" />
     <Content Include="Libs\Spring.Core.dll" />
@@ -282,7 +284,6 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Web\Models\" />
     <Folder Include="FileSave\" />
-    <Folder Include="Imgs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
@@ -325,7 +326,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51685</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51685/</IISUrl>
+          <IISUrl>http://localhost:56692/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

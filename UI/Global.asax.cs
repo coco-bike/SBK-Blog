@@ -54,8 +54,8 @@ namespace UI
                 IUserAdminService userService = new UserAdminService();
                 List<UserModel> userList = new List<UserModel>()
                 {
-                    new UserModel(){BuildTime=DateTime.Now,Count=0,EMail="aaa",HeadPicUrl="aaa",LoginTime=DateTime.Now,NickName="aaa",Pwd="aaaa",State=1,TelNumber="155555555",UName="aaaa",UpdateTime=DateTime.Now},
-                    new UserModel(){BuildTime=DateTime.Now,Count=0,EMail="aaa",HeadPicUrl="aaa",LoginTime=DateTime.Now,NickName="aaa",Pwd="aaaa",State=1,TelNumber="155555555",UName="aaaa",UpdateTime=DateTime.Now},                    
+                    new UserModel(){BuildTime=DateTime.Now.Date,Count=0,EMail="5544332211@qq.com",HeadPicUrl="~/Imgs/HeadPic/headpic-1.jpg",LoginTime=DateTime.Now.Date,Type=1,Pwd="112233",State=1,TelNumber="155555555",UName="MrChen",UpdateTime=DateTime.Now.Date},
+                    new UserModel(){BuildTime=DateTime.Now.Date,Count=0,EMail="1122334455@qq.com",HeadPicUrl="~/Imgs/HeadPic/headpic-2.jpg",LoginTime=DateTime.Now.Date,Type=2,Pwd="112233",State=1,TelNumber="155555555",UName="MrSong",UpdateTime=DateTime.Now.Date}                    
                 };
                 userService.AddRange(userList);
             }

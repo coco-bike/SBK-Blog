@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using UI.Services;
 
 namespace UI.Areas.Admin.Controllers
 {
-    public class AuthorityController : Controller
+    public class AdminUserController : Controller
     {
         //
-        // GET: /Admin/Authority/
-        [Authentication]
+        // GET: /Admin/User/
+
         public ActionResult Index()
         {
             return View();
