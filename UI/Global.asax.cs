@@ -51,7 +51,7 @@ namespace UI
             DbContext db = new MyContext();
             if (db.Database.CreateIfNotExists())
             {
-                IUserAdminService userService = new UserAdminService();
+                IUserWebService userService = new UserWebService();
                 List<UserModel> userList = new List<UserModel>()
                 {
                     new UserModel(){BuildTime=DateTime.Now.Date,Count=0,EMail="5544332211@qq.com",HeadPicUrl="~/Imgs/HeadPic/headpic-1.jpg",LoginTime=DateTime.Now.Date,Type=1,Pwd="112233",State=1,TelNumber="155555555",UName="MrChen",UpdateTime=DateTime.Now.Date},

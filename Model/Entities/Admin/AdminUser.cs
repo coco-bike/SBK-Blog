@@ -6,48 +6,32 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class UserModel
+    public class AdminUser
     {
         /// <summary>
         /// 主键
         /// </summary>
-        public long Id { get; set; }
+        public int Id { get; set; }
         /// <summary>
-        /// 用户名
+        /// 管理员名称
         /// </summary>
-        public string UName { get; set; }
+        public string Name { get; set; }
         /// <summary>
         /// 密码
         /// </summary>
-        public string Pwd { get; set; }
+        public string Password { get; set; }
         /// <summary>
-        /// 类型 1:用户，2：管理员
+        /// 管理员类型1： 1级管理员,2：2级管理员,3：3级管理员
         /// </summary>
         public int Type { get; set; }
         /// <summary>
-        /// 电话
+        /// 手机号
         /// </summary>
-        public string TelNumber { get;set; }
-        /// <summary>
-        /// 电子邮箱
-        /// </summary>
-        public string EMail { get; set; }
-        /// <summary>
-        /// 登录次数
-        /// </summary>
-        public long Count { get; set; }
-        /// <summary>
-        /// 头像地址
-        /// </summary>
-        public string HeadPicUrl { get; set; }
+        public string TelNumber { get; set; }
         /// <summary>
         /// 创建时间
         /// </summary>
         public DateTime BuildTime { get; set; }
-        /// <summary>
-        /// 修改时间
-        /// </summary>
-        public DateTime UpdateTime { get; set; }
         /// <summary>
         /// 最新登录时间
         /// </summary>
@@ -56,6 +40,7 @@ namespace Model
         /// 状态(0：删除，1：启用，2：禁用)
         /// </summary>
         public int State { get; set; }
-        public virtual ICollection<RoleModel> RoleModels { get; set; }
+
+        public virtual ICollection<AdminRole> AdminRoles { get; set; }
     }
 }

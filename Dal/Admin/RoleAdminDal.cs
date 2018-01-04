@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IDal;
+using Model;
 
 namespace Dal
 {
-    public class RoleAdminDal:RoleDal,IRoleAdminDal
+    public class RoleAdminDal:AdminRoleDal,IRoleAdminDal
     {
     }
 }

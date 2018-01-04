@@ -234,6 +234,7 @@ G:\Git\DevelopmentFramework\Dal\bin\Debug\zh-Hans\EntityFramework.SqlServer.reso
 G:\Git\DevelopmentFramework\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\Dal\obj\Debug\Dal.dll
 G:\Git\DevelopmentFramework\Dal\obj\Debug\Dal.pdb
+G:\Git\SBK-Bolg\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\Dal\bin\Debug\Dal.dll.config
 G:\Git\SBK-Bolg\Dal\bin\Debug\Dal.dll
 G:\Git\SBK-Bolg\Dal\bin\Debug\Dal.pdb
@@ -250,6 +251,5 @@ G:\Git\SBK-Bolg\Dal\bin\Debug\EntityFramework.Extended.xml
 G:\Git\SBK-Bolg\Dal\bin\Debug\EntityFramework.SqlServer.xml
 G:\Git\SBK-Bolg\Dal\bin\Debug\zh-Hans\EntityFramework.resources.dll
 G:\Git\SBK-Bolg\Dal\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
-G:\Git\SBK-Bolg\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\Dal\obj\Debug\Dal.dll
 G:\Git\SBK-Bolg\Dal\obj\Debug\Dal.pdb

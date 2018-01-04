@@ -7,8 +7,7 @@ using IService;
 
 namespace Service
 {
-    public class RoleAdminService:RoleService,IRoleAdminService
+    public class RoleAdminService:AdminRoleService,IRoleAdminService
     {
-
     }
 }

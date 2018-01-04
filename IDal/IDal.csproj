@@ -49,11 +49,17 @@
     <Compile Include="Admin\IAuthorityAdminDal.cs" />
     <Compile Include="Admin\IRoleAdminDal.cs" />
     <Compile Include="Admin\IUserAdminDal.cs" />
-    <Compile Include="Base\IAuthorityDal.cs" />
+    <Compile Include="Web\IAuthorityWebDal.cs" />
+    <Compile Include="Web\IRoleWebDal.cs" />
+    <Compile Include="Web\IUserWebDal.cs" />
+    <Compile Include="Base\Admin\IAdminAuthorityDal.cs" />
+    <Compile Include="Base\Admin\IAdminRoleDal.cs" />
+    <Compile Include="Base\Admin\IAdminUserDal.cs" />
+    <Compile Include="Base\Web\IAuthorityDal.cs" />
     <Compile Include="Base\IBaseDal.cs" />
     <Compile Include="Base\IDbSession.cs" />
-    <Compile Include="Base\IRoleDal.cs" />
-    <Compile Include="Base\IUserDal.cs" />
+    <Compile Include="Base\Web\IRoleDal.cs" />
+    <Compile Include="Base\Web\IUserDal.cs" />
     <Compile Include="T4\Configuration.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

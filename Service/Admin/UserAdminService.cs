@@ -7,8 +7,7 @@ using IService;
 
 namespace Service
 {
-    public class UserAdminService : UserService,IUserAdminService
+    public class UserAdminService :AdminUserService,IUserAdminService
     {
-
     }
 }

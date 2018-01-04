@@ -19,6 +19,7 @@ namespace Model
             this.Property(t => t.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
             //配置字段属性
+            this.Property(t => t.Id).IsRequired();
             this.Property(t => t.BuildTime).IsRequired();
             this.Property(t => t.Count).IsRequired();
             this.Property(t => t.EMail).IsRequired().HasMaxLength(500);

@@ -115,6 +115,7 @@ G:\Git\DevelopmentFramework\API\bin\zh-Hant\System.Spatial.resources.dll
 G:\Git\DevelopmentFramework\API\obj\Debug\API.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\API\obj\Debug\API.dll
 G:\Git\DevelopmentFramework\API\obj\Debug\API.pdb
+G:\Git\SBK-Bolg\API\obj\Debug\API.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\API\bin\API.dll.config
 G:\Git\SBK-Bolg\API\bin\SwaggerApiDemo.XML
 G:\Git\SBK-Bolg\API\bin\API.dll
@@ -229,6 +230,5 @@ G:\Git\SBK-Bolg\API\bin\ko\System.Spatial.resources.dll
 G:\Git\SBK-Bolg\API\bin\ru\System.Spatial.resources.dll
 G:\Git\SBK-Bolg\API\bin\zh-Hans\System.Spatial.resources.dll
 G:\Git\SBK-Bolg\API\bin\zh-Hant\System.Spatial.resources.dll
-G:\Git\SBK-Bolg\API\obj\Debug\API.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\API\obj\Debug\API.dll
 G:\Git\SBK-Bolg\API\obj\Debug\API.pdb

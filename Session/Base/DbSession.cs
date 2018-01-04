@@ -35,8 +35,8 @@ namespace Session
         //    }
         //    set { _ProductDal = value; }
         //}
-        private IUserAdminDal _UserDal;
-        public IUserAdminDal UserDal
+        private IUserWebDal _UserDal;
+        public IUserWebDal UserDal
         {
             get
             {
@@ -48,8 +48,8 @@ namespace Session
             }
             set { _UserDal = value; }
         }
-        private IAuthorityAdminDal _AuthorityDal;
-        public IAuthorityAdminDal AuthorityDal
+        private IAuthorityWebDal _AuthorityDal;
+        public IAuthorityWebDal AuthorityDal
         {
             get
             {
@@ -62,8 +62,8 @@ namespace Session
             set { _AuthorityDal = value; }
         }
 
-        public IRoleAdminDal _RoleDal;
-        public IRoleAdminDal RoleDal
+        public IRoleWebDal _RoleDal;
+        public IRoleWebDal RoleDal
         {
             get
             {
@@ -75,6 +75,54 @@ namespace Session
             }
             set { _RoleDal = value; }
         }
+
+        public IRoleAdminDal _AdminRoleDal;
+       public IRoleAdminDal AdminRoleDal
+        {
+            get
+            {
+                if (_AdminRoleDal == null)
+                {
+                    _AdminRoleDal = DalFactory.CreateAdminRoleDal();
+                }
+                return _AdminRoleDal;
+            }
+            set { _AdminRoleDal = value; }
+        }
+
+       public IUserAdminDal _AdminUserDal;
+       public IUserAdminDal AdminUserDal
+       {
+           get
+           {
+               if (_AdminUserDal == null)
+               {
+                   _AdminUserDal = DalFactory.CreateAdminUserDal();
+               }
+               return _AdminUserDal;
+           }
+           set
+           {
+               _AdminUserDal = value;
+           }
+       }
+
+        public IAuthorityAdminDal _AdminAuthorityDal;
+        public IAuthorityAdminDal AdminAuthorityDal
+       {
+           get
+           {
+               if (_AdminAuthorityDal == null)
+               {
+                   _AdminAuthorityDal = DalFactory.CreateAdminAuthorityDal();
+               }
+               return _AdminAuthorityDal;
+           }
+           set
+           {
+               _AdminAuthorityDal = value;
+           }
+       }
         /// <summary>
         /// 执行Sql
         /// </summary>

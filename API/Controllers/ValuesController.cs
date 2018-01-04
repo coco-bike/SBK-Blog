@@ -23,41 +23,41 @@ namespace API.Controllers
     public class ValuesController : JsonController
     {
         #region 初始化
-        private IUserAdminService _userService { get; set; }
-        private IAuthorityAdminService _authorityService { get; set; }
-        private IRoleAdminService _roleadminService { get; set; }
-        public IUserAdminService UserService
+        private IUserWebService _userService { get; set; }
+        private IAuthorityWebService _authorityService { get; set; }
+        private IRoleWebService _roleadminService { get; set; }
+        public IUserWebService UserService
         {
             get
             {
                 if (_userService == null)
                 {
-                    return new UserAdminService();
+                    return new UserWebService();
                 }
                 return _userService;
             }
         }
 
-        public IAuthorityAdminService AuthorityService
+        public IAuthorityWebService AuthorityService
         {
             get
             {
                 if (_userService == null)
                 {
-                    return new AuthorityAdminService();
+                    return new AuthorityWebService();
                 }
                 return _authorityService;
             }
         }
 
 
-        public IRoleAdminService RoleService
+        public IRoleWebService RoleService
         {
             get
             {
                 if (_roleadminService == null)
                 {
-                    return new RoleAdminService();
+                    return new RoleWebService();
                 }
                 return _roleadminService;
             }

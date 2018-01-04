@@ -52,9 +52,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\AuthorityModel.cs" />
-    <Compile Include="Entities\RoleModel.cs" />
-    <Compile Include="Entities\UserModel.cs" />
+    <Compile Include="Entities\Admin\AdminAuthority.cs" />
+    <Compile Include="Entities\Admin\AdminRole.cs" />
+    <Compile Include="Entities\Admin\AdminUser.cs" />
+    <Compile Include="Entities\Web\AuthorityModel.cs" />
+    <Compile Include="Entities\Web\RoleModel.cs" />
+    <Compile Include="Entities\Web\UserModel.cs" />
+    <Compile Include="Mapping\AdminAuthorityMap.cs" />
+    <Compile Include="Mapping\AdminRoleMap.cs" />
+    <Compile Include="Mapping\AdminUserMap.cs" />
     <Compile Include="Mapping\AuthorityModelMap.cs" />
     <Compile Include="Mapping\RoleModelMap.cs" />
     <Compile Include="Mapping\UserModelMap.cs" />

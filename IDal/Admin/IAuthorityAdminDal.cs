@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDal
 {
-    public partial interface IAuthorityAdminDal:IAuthorityDal
+    public partial interface IAuthorityAdminDal:IAdminAuthorityDal
     {
-
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IService
 {
-    public partial  interface IRoleAdminService:IRoleService
+    public partial interface IRoleAdminService:IAdminRoleService
     {
     }
 }

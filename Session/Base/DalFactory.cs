@@ -40,26 +40,50 @@ namespace Session
             //    }
             //}
 
-            public static IAuthorityAdminDal CreateAuthorityDal()
+            public static IAuthorityWebDal CreateAuthorityDal()
             {
                 using(var scope=container.BeginLifetimeScope())
+                {
+                    return scope.Resolve<IAuthorityWebDal>();
+                }
+            }
+
+            public static IUserWebDal CreateUserDal()
+            {
+                using (var scope=container.BeginLifetimeScope())
+                {
+                    return scope.Resolve<IUserWebDal>();
+                }
+            }
+            public static IRoleWebDal CreateRoleDal()
+            {
+                using (var scope = container.BeginLifetimeScope())
+                {
+                    return scope.Resolve<IRoleWebDal>();
+                }
+            }
+
+            public static IAuthorityAdminDal CreateAdminAuthorityDal()
+            {
+                using (var scope = container.BeginLifetimeScope())
                 {
                     return scope.Resolve<IAuthorityAdminDal>();
                 }
             }
 
-            public static IUserAdminDal CreateUserDal()
-            {
-                using (var scope=container.BeginLifetimeScope())
-                {
-                    return scope.Resolve<IUserAdminDal>();
-                }
-            }
-            public static IRoleAdminDal CreateRoleDal()
+            public static IRoleAdminDal CreateAdminRoleDal()
             {
                 using (var scope = container.BeginLifetimeScope())
                 {
                     return scope.Resolve<IRoleAdminDal>();
+                }
+            }
+
+            public static IUserAdminDal CreateAdminUserDal()
+            {
+                using (var scope = container.BeginLifetimeScope())
+                {
+                    return scope.Resolve<IUserAdminDal>();
                 }
             }
         }

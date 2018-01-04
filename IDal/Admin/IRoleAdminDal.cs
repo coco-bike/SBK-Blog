@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace IDal
 {
-    public partial interface IRoleAdminDal:IRoleDal
+    public partial interface IRoleAdminDal:IAdminRoleDal
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IService
 {
-    public partial interface IUserAdminService:IUserService
+    public partial interface IUserAdminService:IAdminUserService
     {
     }
 }

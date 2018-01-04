@@ -40,19 +40,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\IAuthorityAdminService.cs" />
-    <Compile Include="Admin\IRoleAdminService.cs" />
-    <Compile Include="Admin\IUserAdminService.cs" />
-    <Compile Include="Base\IAuthorityService.cs" />
+    <Compile Include="Web\IAuthorityWebService.cs" />
+    <Compile Include="Web\IRoleWebService.cs" />
+    <Compile Include="Web\IUserWebService.cs" />
+    <Compile Include="Base\Admin\IAdminAuthorityService.cs" />
+    <Compile Include="Base\Admin\IAdminRoleService.cs" />
+    <Compile Include="Base\Admin\IAdminUserService.cs" />
+    <Compile Include="Base\Web\IAuthorityService.cs" />
     <Compile Include="Base\IBaseService.cs" />
-    <Compile Include="Base\IRoleService.cs" />
-    <Compile Include="Base\IUserService.cs" />
+    <Compile Include="Base\Web\IRoleService.cs" />
+    <Compile Include="Base\Web\IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="T4\Configuration.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Configuration.tt</DependentUpon>
     </Compile>
+    <Compile Include="Admin\IAuthorityAdminService.cs" />
+    <Compile Include="Admin\IRoleAdminService.cs" />
+    <Compile Include="Admin\IUserAdminService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="T4\Configuration.tt">

@@ -10,9 +10,12 @@ namespace IDal
     public interface IDbSession
     {
         DbContext entity { get; }
-        IUserAdminDal UserDal { get; set; }
-        IAuthorityAdminDal AuthorityDal { get; set; }
-        IRoleAdminDal RoleDal { get; set; }
+        IUserWebDal UserDal { get; set; }
+        IAuthorityWebDal AuthorityDal { get; set; }
+        IRoleWebDal RoleDal { get; set; }
+        IAuthorityAdminDal AdminAuthorityDal { get; set; }
+        IRoleAdminDal AdminRoleDal { get; set; }
+        IUserAdminDal AdminUserDal { get; set; }
         int ExcuteSql(string sql, object[] parameters);
         bool SaveChanges();
     }

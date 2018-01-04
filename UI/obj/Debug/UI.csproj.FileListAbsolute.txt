@@ -22,6 +22,7 @@ G:\Git\DevelopmentFramework\UI\bin\EntityFramework.Extended.xml
 G:\Git\DevelopmentFramework\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\UI\obj\Debug\UI.dll
 G:\Git\DevelopmentFramework\UI\obj\Debug\UI.pdb
+G:\Git\SBK-Bolg\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\UI\bin\Bin\Autofac.dll
 G:\Git\SBK-Bolg\UI\bin\UI.dll.config
 G:\Git\SBK-Bolg\UI\bin\UI.dll
@@ -43,6 +44,5 @@ G:\Git\SBK-Bolg\UI\bin\IDal.pdb
 G:\Git\SBK-Bolg\UI\bin\Session.pdb
 G:\Git\SBK-Bolg\UI\bin\Dal.pdb
 G:\Git\SBK-Bolg\UI\bin\EntityFramework.Extended.xml
-G:\Git\SBK-Bolg\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\UI\obj\Debug\UI.dll
 G:\Git\SBK-Bolg\UI\obj\Debug\UI.pdb

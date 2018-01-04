@@ -7,7 +7,7 @@ using IDal;
 
 namespace Dal
 {
-    public class UserAdminDal:UserDal,IUserAdminDal
+     public class UserAdminDal:AdminUserDal,IUserAdminDal
     {
     }
 }
