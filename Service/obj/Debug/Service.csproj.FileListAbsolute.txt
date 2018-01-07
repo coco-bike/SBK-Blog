@@ -303,7 +303,6 @@ G:\Git\DevelopmentFramework\Service\bin\Debug\zh-Hans\EntityFramework.resources.
 G:\Git\DevelopmentFramework\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\Service\obj\Debug\Service.dll
 G:\Git\DevelopmentFramework\Service\obj\Debug\Service.pdb
-G:\Git\SBK-Bolg\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\Service\bin\Debug\Service.dll.config
 G:\Git\SBK-Bolg\Service\bin\Debug\Service.dll
 G:\Git\SBK-Bolg\Service\bin\Debug\Service.pdb
@@ -325,5 +324,6 @@ G:\Git\SBK-Bolg\Service\bin\Debug\EntityFramework.xml
 G:\Git\SBK-Bolg\Service\bin\Debug\EntityFramework.Extended.xml
 G:\Git\SBK-Bolg\Service\bin\Debug\Autofac.xml
 G:\Git\SBK-Bolg\Service\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\Git\SBK-Bolg\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\Service\obj\Debug\Service.dll
 G:\Git\SBK-Bolg\Service\obj\Debug\Service.pdb

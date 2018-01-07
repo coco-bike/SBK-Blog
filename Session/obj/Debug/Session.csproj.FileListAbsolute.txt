@@ -258,7 +258,6 @@ G:\Git\DevelopmentFramework\Session\bin\Debug\zh-Hans\EntityFramework.SqlServer.
 G:\Git\DevelopmentFramework\Session\obj\Debug\Session.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\Session\obj\Debug\Session.dll
 G:\Git\DevelopmentFramework\Session\obj\Debug\Session.pdb
-G:\Git\SBK-Bolg\Session\obj\Debug\Session.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\Session\bin\Debug\Session.dll.config
 G:\Git\SBK-Bolg\Session\bin\Debug\Session.dll
 G:\Git\SBK-Bolg\Session\bin\Debug\Session.pdb
@@ -278,5 +277,6 @@ G:\Git\SBK-Bolg\Session\bin\Debug\Model.pdb
 G:\Git\SBK-Bolg\Session\bin\Debug\EntityFramework.Extended.xml
 G:\Git\SBK-Bolg\Session\bin\Debug\zh-Hans\EntityFramework.resources.dll
 G:\Git\SBK-Bolg\Session\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+G:\Git\SBK-Bolg\Session\obj\Debug\Session.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\Session\obj\Debug\Session.dll
 G:\Git\SBK-Bolg\Session\obj\Debug\Session.pdb

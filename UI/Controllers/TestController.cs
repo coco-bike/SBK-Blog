@@ -4,12 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace UI.Areas.Admin.Controllers
+namespace UI.Controllers
 {
-    public class AdminLoginController : Controller
+    public class TestController : Controller
     {
         //
-        // GET: /AdminLogin/index/
+        // GET: /Test/
+
         public ActionResult Index()
         {
             return View();

@@ -161,6 +161,7 @@
     </Compile>
     <Compile Include="Controllers\Base\JsonBackResult.cs" />
     <Compile Include="Controllers\Base\JsonController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -228,8 +229,8 @@
     <Content Include="Content\Plugs\Ali-Font\iconfont.eot" />
     <Content Include="Content\Plugs\Ali-Font\iconfont.ttf" />
     <Content Include="Content\Plugs\Ali-Font\iconfont.woff" />
-    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <Content Include="Areas\Web\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminLogin\Index.cshtml" />
     <None Include="Properties\PublishProfiles\11111.pubxml" />
     <None Include="Properties\PublishProfiles\222222222.pubxml" />
     <None Include="Properties\PublishProfiles\2323.pubxml" />
@@ -278,6 +279,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Test\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -326,7 +328,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51685</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:56692/</IISUrl>
+          <IISUrl>http://localhost:56892/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
