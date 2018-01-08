@@ -1,0 +1,71 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/EasyUi/css/icon.css" rel="stylesheet" />
+    <link href="~/Content/EasyUi/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Css/admin-login.css" rel="stylesheet" />
+    <title>登录</title>
+</head>
+<body>
+    <div class="ck-container">
+        <div class="ck-title">
+            <h1>博客管理系统</h1>
+        </div>
+        <div class="block">
+
+        </div>
+        <div class="easyui-panel" title="用户登录" style="width:300px;">
+            <form id="ff" method="post" class="login-form">
+                <table cellpadding="5" class="ck-table">
+                    <tr>
+                        <td class="ck-td">
+                            <label for="name">用户名:</label>
+                            <input id="name" class="easyui-validatebox ck-input" type="text" name="username" data-options="required:true,validType:'UserStr'" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ck-td">
+                            <label for="password">密码:</label>
+                            <input id="pwd" class="easyui-validatebox ck-input" type="password" name="pwd" data-options="required:true,validType:'Password',delay:300" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ck-td">
+                            <label for="code" id="code">验证码:</label>
+                            <input id="verifyCode" class="easyui-validatebox ck-input" type="text" name="verifyCode" data-options="required:true,validType:'Length[4]',delay:300" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ck-middle">
+                            <img id="ck-imgcode" class="VerCode" src=" " />
+                            <a class="easyui-linkbutton ck-button" onclick="restimg()">看不清？换一张</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ck-middle">
+                            <input id="autoLogin" type="checkbox" class="ck-checkbox easyui-validatebox" name="autoLogin" />
+                            <label for="autologin">记住密码</label>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="ck-a" style="text-align:left">
+                <a href="../../Admin/AdminLogin/AdminForgotPassword" class="easyui-linkbutton">忘记密码</a>
+            </div>
+            <div class="ck-submit" style="text-align:left;padding:5px">
+                <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">登录</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()">清除</a>
+            </div>
+        </div>
+    </div>
+    <script src="~/Content/EasyUi/jquery.min.js"></script>
+    <script src="~/Content/EasyUi/jquery.easyui.min.js"></script>
+    <script src="~/Content/EasyUi/locale/easyui-lang-zh_CN.js"></script>
+    <script src="~/Areas/Admin/Scripts/admin-Login.js"></script>
+    <script src="~/Scripts/utils.js"></script>
+</body>
+</html>
