@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "登录";
+    Layout = "~/Areas/Web/Views/Shared/_Layout.cshtml";
+}
+@section MySection{
+    <link href="~/Areas/Web/Css/web-login.css" rel="stylesheet" />
+}
+@section MySection1{
+    <script src="~/Areas/Web/Scripts/web-login.js"></script>
+}
+<div class="login">
+    <form class="form-horizontal">
+        <fieldset>
+            <div class="card-header">登录</div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">电子邮件</label>
+                    <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">密码</label>
+                    <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> 记住密码
+                        </label>
+                    </div>
+                </div>
+                <input id="login" type="button" class="btn btn-primary btn-block" value="登录">
+                <div class="text-center">
+                    <a class="d-block small mt-3" href="../../Web/WebLogin/Register">注册一个账号</a>
+                    <a class="d-block small" href="../../Web/WebLogin/ForgotPassword">忘记密码?</a>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

@@ -151,9 +151,8 @@ namespace UI.Areas.Admin.Controllers
             adminUser = adminUserData;
             AdminUser user = new AdminUser();
             var id = Convert.ToInt32(adminUser.Roles);
-            AdminRole roleData = new AdminRole();
-            var role = this._adminRoleService.GetList(s => s.Id == id && s.State == 1).ToList().FirstOrDefault();
-            roleData = role;
+            //AdminRole roleData = new AdminRole();
+            var role = this._adminRoleService.GetList(s => s.Id == id && s.State == 1).ToList().FirstOrDefault();            
             if (role != null)
             {
                 user.LoginTime = DateTime.Now;
@@ -162,12 +161,23 @@ namespace UI.Areas.Admin.Controllers
                 user.Password = "abc112233";
                 user.State = 1;
                 user.TelNumber = adminUser.TelNumber;
-                user.Type = adminUser.Type;              
+                user.Type = adminUser.Type;
             }
             this._adminUserService.Add(user);
-            var userData = this._adminUserService.GetList(s => s.Name == adminUser.Name && s.State == 1).ToList().FirstOrDefault();
-            userData.AdminRoles.Add(roleData);
             return Json(ResultStatus.Success);
+        }
+        public JsonResult AddAdminRole(AdminUserSaveData adminUserData)
+        {
+            var roleid = Convert.ToInt32(adminUserData.Roles);
+            var username = adminUserData.Name;
+            var role = this._adminRoleService.GetList(s => s.Id == roleid && s.State == 1).ToList().FirstOrDefault();
+            var userData = this._adminUserService.GetList(s => s.Name == username && s.State == 1).ToList().FirstOrDefault();
+            if(role!=null&&userData!=null){
+                userData.AdminRoles.Add(role);
+                this._adminUserService.Update(userData);
+                return Json(ResultStatus.Success);
+            }
+            return Json(ResultStatus.Fail);
         }
         public JsonResult UpdateAdminUserData(AdminUserSaveData adminUserData)
         {

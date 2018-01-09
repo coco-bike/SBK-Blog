@@ -25,23 +25,59 @@ function editUser() {
         url = "../../Admin/AdminUser/UpdateAdminUserData";
     }
 }
-function saveUser(){
-    var row = $('#dg1').datagrid('getSelected');
-    var idtext=row.Id;
+
+function bindRole() {
     var nametext = $("#Name").val();
     var typetext = $("#Type").val();
     var teltext = $("#TelNumber").val();
-    var rolestext = $("#Roles").val();    
+    var rolestext = $("#Roles").val();
+    url="../../Admin/AdminUser/AddAdminRole"
+    $.ajax({
+        type: "Post",
+        url: url,
+        data: {
+            'Name': nametext,
+            'Type': typetext,
+            'TelNumber': teltext,
+            'Roles': rolestext
+        },
+        dataType: "Json",
+        success: function (data) {
+            alert("ok");
+        }
+    });
+}
+
+function saveUser() {
+    var row = $('#dg1').datagrid('getSelected');
+    if (row == null) {
+        idtext = null;
+    } else {
+        var idtext = row.Id;
+    }
+    var nametext = $("#Name").val();
+    var typetext = $("#Type").val();
+    var teltext = $("#TelNumber").val();
+    var rolestext = $("#Roles").val();
     $.ajax({
         type: "post",
         url: url,
-        data: {'id':idtext,'Name':nametext,'Type':typetext,'TelNumber':teltext,'Roles':rolestext},
+        data: {
+            'id': idtext,
+            'Name': nametext,
+            'Type': typetext,
+            'TelNumber': teltext,
+            'Roles': rolestext
+        },
         dataType: "Json",
         success: function (data) {
+            if (url = '../../Admin/AdminUser/SaveAdminUserData') {
+                bindRole();
+            }
             $('#dlg').dialog('close'); // close the dialog
-            $('#dg1').datagrid('reload'); 
+            $('#dg1').datagrid('reload');
         },
-        error:function(){
+        error: function () {
             alert("出现错误");
         }
     });

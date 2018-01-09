@@ -16,16 +16,16 @@ namespace UI
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
+                defaults: new { controller = "WebLogin", action = "Index", id = UrlParameter.Optional },
+                namespaces: new string[] { "UI.Areas.Web.Controllers" }
+            ).DataTokens.Add("area", "Web");
+
+            routes.MapRoute(
+                name: "Admin",
+                url: " Admin/{controller}/{action}/{id}",
                 defaults: new { controller = "AdminLogin", action = "AdminLogin", id = UrlParameter.Optional },
                 namespaces: new string[] { "UI.Areas.Admin.Controllers" }
             ).DataTokens.Add("area", "Admin");
-
-            routes.MapRoute(
-                name: "Web",
-                url: " Web/{controller}/{action}/{id}",
-                defaults: new { controller = "Web", action = "Index", id = UrlParameter.Optional },
-                namespaces: new string[] { "UI.Areas.Web.Controllers" }
-            ).DataTokens.Add("area", "Web");
         }
     }
 }

@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "注册";
+    Layout = "~/Areas/Web/Views/Shared/_Layout.cshtml";
+}
+@section MySection{
+    <link href="~/Areas/Web/Css/web-register.css" rel="stylesheet" />
+}
+@section MySection1{
+    <script src="~/Areas/Web/Scripts/web-register.js"></script>
+}
+<div class="register">
+    <form class="form-horizontal">
+        <fieldset>
+            <div class="card-header">注册一个账号</div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="exampleInputName">姓</label>
+                                <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Enter first name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleInputLastName">名</label>
+                                <input class="form-control" id="exampleInputLastName" type="text" aria-describedby="nameHelp" placeholder="Enter last name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">电子邮件地址</label>
+                        <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="exampleInputPassword1">密码</label>
+                                <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleConfirmPassword">确认密码</label>
+                                <input class="form-control" id="exampleConfirmPassword" type="password" placeholder="Confirm password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="exampleInputCode1" id="exampleinputcode" type="button" value="发送验证码">
+                        <input class="form-control" id="exampleInputCode1" type="code" aria-describedby="codeHelp" placeholder="Enter code">
+                    </div>
+                    <input id="register" type="button" class="btn btn-primary btn-block" value="注册">
+                </form>
+                <div class="text-center">
+                    <a class="d-block small mt-3" href="../../Web/WebLogin/Index">登录</a>
+                    <a class="d-block small" href="../../Web/WebLogin/ForgotPassword">忘记密码?</a>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

@@ -161,6 +161,7 @@
     <Compile Include="Areas\Admin\Models\AdminUserData.cs" />
     <Compile Include="Areas\Admin\Models\DefaultInputList.cs" />
     <Compile Include="Areas\Web\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Web\Controllers\WebLoginController.cs" />
     <Compile Include="Areas\Web\WebAreaRegistration.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -180,7 +181,9 @@
     <Content Include="Areas\Admin\Css\admin-login.css" />
     <Content Include="Areas\Admin\Css\admin-role.css" />
     <Content Include="Areas\Admin\Css\admin-user.css" />
-    <Content Include="Areas\Admin\Css\Layout.css" />
+    <Content Include="Areas\Web\Css\Layout.css" />
+    <Content Include="Areas\Web\Css\web-forgotpassword.css" />
+    <Content Include="Areas\Web\Css\web-login.css" />
     <Content Include="Areas\Admin\Scripts\admin-authority.js" />
     <Content Include="Areas\Admin\Scripts\admin-forget.js" />
     <Content Include="Areas\Admin\Scripts\admin-Login.js" />
@@ -188,6 +191,10 @@
     <Content Include="Areas\Admin\Scripts\admin-role.js" />
     <Content Include="Areas\Admin\Scripts\admin-sonlayout.js" />
     <Content Include="Areas\Admin\Scripts\admin-user.js" />
+    <Content Include="Areas\Web\Css\web-register.css" />
+    <Content Include="Areas\Web\Scripts\web-forgotpassword.js" />
+    <Content Include="Areas\Web\Scripts\web-login.js" />
+    <Content Include="Areas\Web\Scripts\web-register.js" />
     <Content Include="Bin\Antlr3.Runtime.dll" />
     <Content Include="Bin\Autofac.Configuration.dll" />
     <Content Include="Bin\Autofac.dll">
@@ -1994,6 +2001,13 @@
     <Content Include="Content\EasyUi\themes\metro\validatebox.css" />
     <Content Include="Content\EasyUi\themes\metro\window.css" />
     <Content Include="Content\EasyUi\themes\mobile.css" />
+    <Content Include="Content\Plugs\3DStart\index_style.css" />
+    <Content Include="Content\Plugs\3DStart\in_top_bj.jpg" />
+    <Content Include="Content\Plugs\3DStart\jquery.min.js" />
+    <Content Include="Content\Plugs\3DStart\Music.mp3" />
+    <Content Include="Content\Plugs\3DStart\nav_gv.png" />
+    <Content Include="Content\Plugs\3DStart\top_logo.png" />
+    <Content Include="Content\Plugs\3DStart\xingkong.js" />
     <Content Include="Content\Plugs\Cropper\cropper.css" />
     <Content Include="Content\Plugs\Cropper\cropper.js" />
     <Content Include="Content\Plugs\Cropper\docs.css" />
@@ -2052,6 +2066,9 @@
     <Content Include="Areas\Admin\Views\Shared\SonLayout.cshtml" />
     <Content Include="Areas\Admin\Views\AdminLogin\AdminLogin.cshtml" />
     <Content Include="Areas\Admin\Views\AdminLogin\AdminForgotPassword.cshtml" />
+    <Content Include="Areas\Web\Views\WebLogin\Index.cshtml" />
+    <Content Include="Areas\Web\Views\WebLogin\Register.cshtml" />
+    <Content Include="Areas\Web\Views\WebLogin\ForgotPassword.cshtml" />
     <None Include="Properties\PublishProfiles\11111.pubxml" />
     <None Include="Properties\PublishProfiles\222222222.pubxml" />
     <None Include="Properties\PublishProfiles\2323.pubxml" />

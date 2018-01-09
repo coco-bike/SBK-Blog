@@ -55,6 +55,7 @@
     <Compile Include="Entities\Admin\AdminAuthority.cs" />
     <Compile Include="Entities\Admin\AdminRole.cs" />
     <Compile Include="Entities\Admin\AdminUser.cs" />
+    <Compile Include="Entities\Web\Artile.cs" />
     <Compile Include="Entities\Web\AuthorityModel.cs" />
     <Compile Include="Entities\Web\RoleModel.cs" />
     <Compile Include="Entities\Web\UserModel.cs" />
