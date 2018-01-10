@@ -5,7 +5,7 @@
         var useremail = $("#exampleInputEmail1").val();
         $.ajax({
             type: "post",
-            url: "../../web/user/FindUserInfo",
+            url: "../../web/WebLogin/FindUserInfo",
             dataType: "json",
             data: JSON.stringify({ email: useremail }),
             contentType: "application/json;charset=utf-8",
@@ -31,7 +31,7 @@
         if (usercode != null) {
             $.ajax({
                 type: "post",
-                url: "../../web/user/ValidatePwdBackCode",
+                url: "../../web/WebLogin/ValidatePwdBackCode",
                 dataType: "json",
                 data: JSON.stringify({ code: usercode }),
                 contentType: "application/json;charset=utf-8",
@@ -53,7 +53,7 @@
         if (password1 != null && password2 != null && password1 == password2) {
             $.ajax({
                 type: "post",
-                url: "../../web/user/GetPassword",
+                url: "../../web/WebLogin/GetPassword",
                 dataType: "json",
                 data: JSON.stringify({ email: email, password: password1 }),
                 contentType: "application/json;charset=utf-8",

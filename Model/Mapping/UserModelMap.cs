@@ -29,10 +29,11 @@ namespace Model
             this.Property(t => t.Pwd).IsRequired().HasMaxLength(500);
             this.Property(t => t.State).IsRequired();
             this.Property(t => t.TelNumber).IsRequired().HasMaxLength(500);
-            this.Property(t => t.UName).IsRequired().HasMaxLength(500);
+            this.Property(t => t.Name).IsRequired().HasMaxLength(500);
+            this.Property(t => t.RoleID).IsRequired();
 
             //配置关系
-            this.HasMany(t => t.RoleModels).WithMany(t => t.UserDalModels).Map(t => t.ToTable("UserRole").MapLeftKey("UserID").MapRightKey("RoleID"));
+            this.HasRequired(s => s.Role).WithMany(t => t.UserModels).HasForeignKey(s => s.RoleID).WillCascadeOnDelete(false);
         }
     }
 }

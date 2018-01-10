@@ -50,14 +50,47 @@ namespace UI
             DbContext db = new MyContext();
             if (db.Database.CreateIfNotExists())
             {
+                //前台权限
+                IAuthorityWebService authorityService = new AuthorityWebService();
+                List<AuthorityModel> authorityList = new List<AuthorityModel>()
+                {
+                    new AuthorityModel(){BuildTime=DateTime.Now,Description="读博客的权限",Name="读权限",State=1,Type=1,UpdateTime=DateTime.Now,RoleModels=new List<RoleModel>()},
+                    new AuthorityModel(){BuildTime=DateTime.Now,Description="写博客的权限",Name="写权限",State=1,Type=1,UpdateTime=DateTime.Now,RoleModels=new List<RoleModel>()}
+                };
+                authorityService.AddRange(authorityList);
+                AuthorityModel authority1 = new AuthorityModel();
+                authority1 = authorityService.GetList(s => s.Name == "读权限" && s.State == 1).ToList().FirstOrDefault();
+
+
+                //前台角色
+                IRoleWebService roleService = new RoleWebService();
+                List<RoleModel> roleList = new List<RoleModel>(){
+                    new RoleModel(){BuildTime=DateTime.Now,Description="一般用户",RoleName="普通用户",State=1,UpdateTime=DateTime.Now,AuthorityModels=new List<AuthorityModel>(),UserModels=new List<UserModel>()},
+                    new RoleModel(){BuildTime=DateTime.Now,Description="充值的用户拥有更多权限",RoleName="VIP用户",State=1,UpdateTime=DateTime.Now,AuthorityModels=new List<AuthorityModel>(),UserModels=new List<UserModel>()}
+                };
+                roleService.AddRange(roleList);
+
+                var role1 = roleService.GetList(s=>s.RoleName=="普通用户"&&s.State==1).ToList().FirstOrDefault();
+                var role2 = roleService.GetList(s=>s.RoleName=="VIP用户"&&s.State==1).ToList().FirstOrDefault();
+                role1.AuthorityModels.Add(authority1);
+                role2.AuthorityModels.Add(authority1);
+                roleService.Update(role1);
+                roleService.Update(role2);
+
                 //用户数据
                 IUserWebService userService = new UserWebService();
                 List<UserModel> userList = new List<UserModel>()
                 {
-                    new UserModel(){BuildTime=DateTime.Now,Count=0,EMail="5544332211@qq.com",HeadPicUrl="~/Imgs/HeadPic/headpic-1.jpg",LoginTime=DateTime.Now,Type=1,Pwd="112233",State=1,TelNumber="155555555",UName="MrChen",UpdateTime=DateTime.Now},
-                    new UserModel(){BuildTime=DateTime.Now,Count=0,EMail="1122334455@qq.com",HeadPicUrl="~/Imgs/HeadPic/headpic-2.jpg",LoginTime=DateTime.Now,Type=2,Pwd="112233",State=1,TelNumber="155555555",UName="MrSong",UpdateTime=DateTime.Now}                    
+                    new UserModel(){BuildTime=DateTime.Now,Count=0,EMail="332211@qq.com",HeadPicUrl="~/Imgs/HeadPic/headpic-1.jpg",LoginTime=DateTime.Now,Type=1,Pwd= Common.EncryptionHelper.GetMd5Str("112233"),State=1,TelNumber="155555555",Name="MrChen",UpdateTime=DateTime.Now,Role=role1},
+                    new UserModel(){BuildTime=DateTime.Now,Count=0,EMail="112233@qq.com",HeadPicUrl="~/Imgs/HeadPic/headpic-2.jpg",LoginTime=DateTime.Now,Type=2,Pwd= Common.EncryptionHelper.GetMd5Str("112233"),State=1,TelNumber="155555555",Name="MrSong",UpdateTime=DateTime.Now,Role=role2}                    
                 };
                 userService.AddRange(userList);
+                //var user1 = userService.GetList(s => s.Name == "MrChen"&&s.State==1).ToList().FirstOrDefault();
+                //var user2 = userService.GetList(s => s.Name == "MrSong" && s.State == 1).ToList().FirstOrDefault();
+                //user1.Role = role1;
+                //user2.Role = role2;
+                //userService.Update(user1);
+                //userService.Update(user2);
 
                 //管理员数据
                 IAdminUserService adminUserService = new AdminUserService();

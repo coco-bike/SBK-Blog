@@ -11,11 +11,19 @@ namespace UI.Services
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            string key = filterContext.HttpContext.Request.Cookies["sessionId"].Value;
-            if (CacheHelper.Get(key) == null)
+            string key ;
+            if (filterContext.HttpContext.Request.Cookies["sessionId"] != null)
             {
-                filterContext.Result = new RedirectResult("../Login/index");
-            }
+                key = filterContext.HttpContext.Request.Cookies["sessionId"].Value;
+                if (CacheHelper.Get(key) == null)
+                {
+                    filterContext.Result = new RedirectResult("../Web/WebLogin/index");
+                }
+                else
+                {
+                    filterContext.Result = new RedirectResult("../Web/Home/index");
+                }
+            }           
             base.OnActionExecuting(filterContext);
         }
     }

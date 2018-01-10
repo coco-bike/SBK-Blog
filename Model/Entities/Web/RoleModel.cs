@@ -33,6 +33,6 @@ namespace Model
         /// </summary>
         public int State { get; set; }
         public virtual ICollection<AuthorityModel> AuthorityModels { get; set; }
-        public virtual ICollection<UserModel> UserDalModels { get; set; }
+        public virtual ICollection<UserModel> UserModels { get; set; }
     }
 }

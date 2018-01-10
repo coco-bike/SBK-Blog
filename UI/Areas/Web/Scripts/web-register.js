@@ -3,14 +3,12 @@
     $('#register').click(function () {
         var useremail = $("#exampleInputEmail1").val();
         var userpassword = $("#exampleInputPassword1").val();
-        var username1 = $("#exampleInputName").val();
-        var username2 = $("#exampleInputLastName").val();
+        var username = $("#exampleInputName").val();
         var usercode = $("#exampleInputCode1").val();
-        var username = username1 + username2;
-        if (useremail != null && userpassword != null && username1 != null && username2 != null && usercode != null && usercode != null) {
+        if (useremail != null && userpassword != null && username != null && usercode != null && usercode != null) {
             $.ajax({
                 type: "post",
-                url: "../../web/user/RegisterUserInfo",
+                url: "../../web/WebLogin/RegisterUserInfo",
                 dataType: "json",
                 data: JSON.stringify({ email: useremail, password: userpassword, name: username, code: usercode }),
                 contentType: "application/json;charset=utf-8",
@@ -28,6 +26,7 @@
             });
         }
     });
+
     //发送验证码的Ajax
     var InterValObj;
     var count = 60;
@@ -43,7 +42,7 @@
         $.ajax({
             type: "post",
             dataType: "JSON",
-            url: '../../web/user/GetCode',
+            url: '../../web/WebLogin/GetCode',
             data: JSON.stringify({ email: useremail }),
             contentType: "application/json;charset=utf-8",
             success: function (data) {

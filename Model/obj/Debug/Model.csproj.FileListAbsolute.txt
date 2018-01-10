@@ -93,3 +93,4 @@ G:\Git\SBK-Bolg\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
 G:\Git\SBK-Bolg\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 G:\Git\SBK-Bolg\Model\obj\Debug\Model.dll
 G:\Git\SBK-Bolg\Model\obj\Debug\Model.pdb
+G:\Git\SBK-Bolg\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

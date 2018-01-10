@@ -15,10 +15,5 @@ namespace UI.Areas.Web.Controllers
         {
             return View();
         }
-        public ActionResult abc()
-        {
-            throw new Exception("抛出错误");
-        }
-
     }
 }

@@ -79,12 +79,12 @@ namespace API.Controllers
         {
             string pwdMd5 = EncryptionHelper.GetMd5Str(pwd);
             
-            var user = UserService.GetList(t => t.UName == nickName && t.Pwd == pwdMd5 && t.State == 1).Select(t => new { t.Id, t.UName, t.Count }).FirstOrDefault();
+            var user = UserService.GetList(t => t.Name == nickName && t.Pwd == pwdMd5 && t.State == 1).Select(t => new { t.Id, UName = t.Name, t.Count }).FirstOrDefault();
             if (user == null)
             {
                 return JsonNetResult(ResultStatus.Fail);
             }
-            int res = UserService.GetUpdate(t => t.UName == nickName, t => new UserModel() { Count = user.Count + 1, LoginTime = DateTime.Now });
+            int res = UserService.GetUpdate(t => t.Name == nickName, t => new UserModel() { Count = user.Count + 1, LoginTime = DateTime.Now });
             if (res > 0)
                 return JsonNetResult(ResultStatus.Success);
             return JsonNetResult(ResultStatus.Fail);
@@ -302,7 +302,7 @@ namespace API.Controllers
             {
                 return JsonNetResult(ResultStatus.NameErr);
             }
-            var userInfo = this.UserService.GetList(t => t.UName == nickName).Select(t => new { t.UName, t.EMail }).FirstOrDefault();
+            var userInfo = this.UserService.GetList(t => t.Name == nickName).Select(t => new { UName = t.Name, t.EMail }).FirstOrDefault();
             if (userInfo != null)
                 return JsonNetResult(ResultStatus.Success, userInfo);
             return JsonNetResult(ResultStatus.Fail);

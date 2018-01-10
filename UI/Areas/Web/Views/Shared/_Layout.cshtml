@@ -5,16 +5,21 @@
     <title>@ViewBag.Title</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="~/Content/Plugs/Wow/css/libs/animate.css" rel="stylesheet" />
     <link href="~/Areas/Web/Css/Layout.css" rel="stylesheet" />
     @RenderSection("MySection", required: false)
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 </head>
-<body>  
+<body>
     <div class="header" id="demo">
-        <div class="title">
-            <p>SongBiKe网络博客</p>
+        <div class="wow rollIn">
+            <div class="title">
+                <p>SongBiKe网络博客</p>
+            </div>
         </div>
-        @RenderBody()
+        <div class="wow bounceInUp">
+            @RenderBody()
+        </div>
         <div class="canvaszz"> </div>
         <canvas id="canvas"></canvas>
     </div>
@@ -30,8 +35,11 @@
     <!--音乐 END-->
 
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="~/Content/Plugs/Wow/dist/wow.min.js"></script>
     <script src="~/Content/Plugs/3DStart/xingkong.js"></script>
     @RenderSection("MySection1", required: false)
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

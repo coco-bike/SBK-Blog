@@ -174,6 +174,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AuthenticationAttribute.cs" />
     <Compile Include="Services\MyExceptionAttribute.cs" />
+    <Compile Include="Services\SendEmail.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Admin\Css\admin-authority.css" />
@@ -181,6 +182,7 @@
     <Content Include="Areas\Admin\Css\admin-login.css" />
     <Content Include="Areas\Admin\Css\admin-role.css" />
     <Content Include="Areas\Admin\Css\admin-user.css" />
+    <Content Include="Areas\Web\Css\home.css" />
     <Content Include="Areas\Web\Css\Layout.css" />
     <Content Include="Areas\Web\Css\web-forgotpassword.css" />
     <Content Include="Areas\Web\Css\web-login.css" />
@@ -192,6 +194,7 @@
     <Content Include="Areas\Admin\Scripts\admin-sonlayout.js" />
     <Content Include="Areas\Admin\Scripts\admin-user.js" />
     <Content Include="Areas\Web\Css\web-register.css" />
+    <Content Include="Areas\Web\Scripts\home.js" />
     <Content Include="Areas\Web\Scripts\web-forgotpassword.js" />
     <Content Include="Areas\Web\Scripts\web-login.js" />
     <Content Include="Areas\Web\Scripts\web-register.js" />
@@ -2021,6 +2024,20 @@
     <Content Include="Content\Plugs\Ali-Font\iconfont.css" />
     <Content Include="Content\Plugs\Ali-Font\iconfont.js" />
     <Content Include="Content\Plugs\Ali-Font\iconfont.svg" />
+    <Content Include="Content\Plugs\DateTime\schedule.css" />
+    <Content Include="Content\Plugs\DateTime\schedule.js" />
+    <Content Include="Content\Plugs\Wow\css\libs\animate.css" />
+    <Content Include="Content\Plugs\Wow\css\site.css" />
+    <Content Include="Content\Plugs\Wow\demo.html" />
+    <Content Include="Content\Plugs\Wow\dist\wow.js" />
+    <Content Include="Content\Plugs\Wow\dist\wow.min.js" />
+    <Content Include="Content\Plugs\Wow\Gruntfile.js" />
+    <Content Include="Content\Plugs\Wow\spec\javascripts\fixtures\custom.html" />
+    <Content Include="Content\Plugs\Wow\spec\javascripts\fixtures\simple.html" />
+    <Content Include="Content\Plugs\Wow\spec\javascripts\helpers\SpecHelper.js" />
+    <Content Include="Content\Plugs\Wow\spec\javascripts\libs\jasmine-jquery.js" />
+    <Content Include="Content\Plugs\Wow\spec\javascripts\libs\jquery.js" />
+    <Content Include="Content\Plugs\Wow\spec\javascripts\wow-spec.js" />
     <Content Include="Global.asax" />
     <Content Include="Areas\Admin\Views\Web.config" />
     <Content Include="Content\Plugs\WebUploader\expressInstall.swf" />
@@ -2069,6 +2086,11 @@
     <Content Include="Areas\Web\Views\WebLogin\Index.cshtml" />
     <Content Include="Areas\Web\Views\WebLogin\Register.cshtml" />
     <Content Include="Areas\Web\Views\WebLogin\ForgotPassword.cshtml" />
+    <Content Include="Content\Plugs\Wow\bower.json" />
+    <Content Include="Content\Plugs\Wow\package.json" />
+    <Content Include="Content\Plugs\Wow\spec\coffeescripts\helpers\SpecHelper.coffee" />
+    <Content Include="Content\Plugs\Wow\spec\coffeescripts\wow-spec.coffee" />
+    <Content Include="Content\Plugs\Wow\src\wow.coffee" />
     <None Include="Properties\PublishProfiles\11111.pubxml" />
     <None Include="Properties\PublishProfiles\222222222.pubxml" />
     <None Include="Properties\PublishProfiles\2323.pubxml" />

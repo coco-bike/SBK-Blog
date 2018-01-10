@@ -15,7 +15,7 @@ namespace Model
         /// <summary>
         /// 用户名
         /// </summary>
-        public string UName { get; set; }
+        public string Name { get; set; }
         /// <summary>
         /// 密码
         /// </summary>
@@ -56,6 +56,7 @@ namespace Model
         /// 状态(0：删除，1：启用，2：禁用)
         /// </summary>
         public int State { get; set; }
-        public virtual ICollection<RoleModel> RoleModels { get; set; }
+        public long RoleID { get; set; }
+        public virtual RoleModel Role { get; set; }
     }
 }
