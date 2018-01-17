@@ -16,6 +16,10 @@ namespace IDal
         IAuthorityAdminDal AdminAuthorityDal { get; set; }
         IRoleAdminDal AdminRoleDal { get; set; }
         IUserAdminDal AdminUserDal { get; set; }
+        IBlogArticleWebDal BlogArticleDal { get; set; }
+        IBlogCommentWebDal BlogCommentDal { get; set; }
+        IBlogFileWebDal BlogFileDal { get; set; }
+        IBlogTypeWebDal BlogTypeDal { get; set; }
         int ExcuteSql(string sql, object[] parameters);
         bool SaveChanges();
     }

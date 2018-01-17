@@ -52,7 +52,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\Web\BlogArticleDal.cs" />
+    <Compile Include="Base\Web\BlogCommentDal.cs" />
+    <Compile Include="Base\Web\BlogFileDal.cs" />
+    <Compile Include="Base\Web\BlogTypeDal.cs" />
     <Compile Include="Web\AuthorityWebDal.cs" />
+    <Compile Include="Web\BlogArticleWebDal.cs" />
+    <Compile Include="Web\BlogCommentWebDal.cs" />
+    <Compile Include="Web\BlogFileWebDal.cs" />
+    <Compile Include="Web\BlogTypeWebDal.cs" />
     <Compile Include="Web\RoleWebDal.cs" />
     <Compile Include="Web\UserWebDal.cs" />
     <Compile Include="Base\Admin\AdminAuthorityDal.cs" />

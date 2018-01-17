@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Plugs/DateTime/schedule.css" rel="stylesheet" />
+     @RenderSection("MySection", required: false)
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_234130_nem7eskcrkpdgqfr.css">
+    <link href="~/Areas/Web/Css/home_Layout.css" rel="stylesheet" />
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="home">
+        <div class="headr">
+            <span class="left">
+                <h1>
+                    薄荷少年博客
+                </h1>
+                <div class="text">
+                    <p>
+                        Tomorrow is another day
+                    </p>
+                </div>
+            </span>
+            <span class="right">
+                <ul class="nav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">文章</a></li>
+                    <li><a href="#">联系</a></li>
+                    <li><a href="#">订阅</a></li>
+                    <li><a href="#">管理</a></li>
+                </ul>
+            </span>
+        </div>
+        <div class="main">
+            <div class="left-menu">
+                <div id='schedule-box' class="boxshaw">
+                </div>
+                <div class="search">
+                    <div class="index-search">
+                        <input type="text" id="index-input" />
+                        <input type="button" value="本站搜索" onclick="searchIndex()" />
+                    </div>
+                    <div class="baidu-search">
+                        <input type="text" id="baidu-input" />
+                        <input type="button" value="百度搜索" onclick="searchBaidu()" />
+                    </div>
+                    <label>搜索:</label>
+                </div>
+                <div class="link">
+                    <ul class="link-nav">
+                        <li><a href="">我的文章</a></li>
+                        <li><a href="">我的评论</a></li>
+                        <li><a href="">最新评论</a></li>
+                        <li><a href="">我的标签</a></li>
+                    </ul>
+                    <label>常用链接:</label>
+                </div>
+                <div class="watch">
+                    <div class="people">
+                        <p>总：<span>11111</span></p>
+                        <p>今日：<span>11111</span></p>
+                    </div>
+                    <label>浏览量：</label>
+                </div>
+            </div>
+            <div class="right-content">
+                @RenderBody()
+            </div>
+        </div>
+        <div class="footer">
+            <span>Copyright ©2018 薄荷少年</span>
+        </div>
+    </div>
+    <script src="~/Content/Plugs/DateTime/schedule.js"></script>
+    <script src="~/Areas/Web/Scripts/home_Layout.js"></script>
+    @RenderSection("MySection1", required: false)
+</body>
+</html>

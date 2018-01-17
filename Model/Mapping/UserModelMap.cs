@@ -34,6 +34,8 @@ namespace Model
 
             //配置关系
             this.HasRequired(s => s.Role).WithMany(t => t.UserModels).HasForeignKey(s => s.RoleID).WillCascadeOnDelete(false);
+
+           
         }
     }
 }

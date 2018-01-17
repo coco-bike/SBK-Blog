@@ -56,7 +56,12 @@ namespace Model
         /// 状态(0：删除，1：启用，2：禁用)
         /// </summary>
         public int State { get; set; }
+        /// <summary>
+        /// 外键角色的ID
+        /// </summary>
         public long RoleID { get; set; }
         public virtual RoleModel Role { get; set; }
+
+        public virtual ICollection<BlogComment> BlogComments { get; set; } 
     }
 }

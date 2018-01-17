@@ -123,6 +123,73 @@ namespace Session
                _AdminAuthorityDal = value;
            }
        }
+
+        public IBlogArticleWebDal _BlogArticleDal;
+        public IBlogArticleWebDal BlogArticleDal
+        {
+            get
+            {
+                if (_BlogArticleDal == null)
+                {
+                    _BlogArticleDal = DalFactory.CreateBlogArticleDal();
+                }
+                return _BlogArticleDal;
+            }
+            set
+            {
+                _BlogArticleDal = value;
+            }
+        }
+
+        public IBlogCommentWebDal _BlogCommentDal;
+        public IBlogCommentWebDal BlogCommentDal
+        {
+            get
+            {
+                if(_BlogCommentDal==null)
+                {
+                    _BlogCommentDal = DalFactory.CreateBlogCommentDal();
+                }
+                return _BlogCommentDal;
+            }
+            set
+            {
+                _BlogCommentDal = value;
+            }
+        }
+        public IBlogTypeWebDal _BlogTypeDal;
+        public IBlogTypeWebDal BlogTypeDal
+        {
+            get
+            {
+                if ( _BlogTypeDal == null)
+                {
+                     _BlogTypeDal = DalFactory.CreateBlogTypeDal();
+                }
+                return _BlogTypeDal;
+            }
+            set
+            {
+                 _BlogTypeDal = value;
+            }
+        }
+
+        public IBlogFileWebDal _BlogFileDal;
+        public IBlogFileWebDal BlogFileDal
+        {
+            get
+            {
+                if (_BlogFileDal == null)
+                {
+                    _BlogFileDal = DalFactory.CreateBlogFileDal();
+                }
+                return _BlogFileDal;
+            }
+            set
+            {
+                _BlogFileDal = value;
+            }
+        }
         /// <summary>
         /// 执行Sql
         /// </summary>

@@ -26,6 +26,10 @@ namespace Model
         public DbSet<AdminUser> AdminUsers { get; set; }
         public DbSet<AdminRole> AdminRoles { get; set; }
         public DbSet<AdminAuthority> AdminAuthoritys { get; set; }
+        public DbSet<BlogArticle> BlogArticles { get; set; }
+        public DbSet<BlogComment> BlogComments { get; set; }
+        public DbSet<BlogFiles> BlogFiles { get; set; }
+        public DbSet<BlogTypes> BlogTypes { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -43,6 +47,11 @@ namespace Model
             modelBuilder.Configurations.Add(new AdminAuthorityMap());
             modelBuilder.Configurations.Add(new AdminRoleMap());
             modelBuilder.Configurations.Add(new AdminUserMap());
+            modelBuilder.Configurations.Add(new BlogArticleMap());
+            modelBuilder.Configurations.Add(new BlogTypeMap());
+            modelBuilder.Configurations.Add(new BlogCommentMap());
+            modelBuilder.Configurations.Add(new BlogFileMap());
+
         }
 
         internal sealed class ReportingDbMigrationsConfiguration : System.Data.Entity.Migrations.DbMigrationsConfiguration<MyContext>

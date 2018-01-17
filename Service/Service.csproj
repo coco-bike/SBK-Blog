@@ -44,7 +44,15 @@
     <Compile Include="Admin\AuthorityAdminService.cs" />
     <Compile Include="Admin\RoleAdminService.cs" />
     <Compile Include="Admin\UserAdminService.cs" />
+    <Compile Include="Base\Web\BlogArticleService.cs" />
+    <Compile Include="Base\Web\BlogCommentService.cs" />
+    <Compile Include="Base\Web\BlogFileService.cs" />
+    <Compile Include="Base\Web\BlogTypeService.cs" />
     <Compile Include="Web\AuthorityWebService.cs" />
+    <Compile Include="Web\BlogArticleWebService.cs" />
+    <Compile Include="Web\BlogCommentWebService.cs" />
+    <Compile Include="Web\BlogFileWebService.cs" />
+    <Compile Include="Web\BlogTypeWebService.cs" />
     <Compile Include="Web\RoleWebService.cs" />
     <Compile Include="Web\UserWebService.cs" />
     <Compile Include="Base\Admin\AdminAuthorityService.cs" />

@@ -1,212 +1,55 @@
-﻿body {
-    background-color: rgb(222, 231, 222);
-}
-*{
-    box-sizing: border-box;
-}
-.headr {
+﻿.article-list li{
+    height: 300px;
     width: 100%;
-    height: 100px;
-    position: relative;
-    margin: 0px;
-    z-index: 99;
-    background-color: rgba(136, 202, 221, 1);
-    border-radius: 10px;
-}
-
-.left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 49%;
-    height: 100%;
-    display: inline-block;
+    padding: 25px 50px 25px 50px;
     display: flex;
-    align-items: center;
-}
-
-.left h1 {
-    margin: 15px;
-    color: aliceblue;
-    display: inline-block;
-}
-/* .left h2{
-    display: inline-block;
-    text-align: center;
-} */
-.text{
-    width: 65%;
-    height: 35px;
-    background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
-    -webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
-    -webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
-    -webkit-background-size: 200% 100%; 
-    -webkit-animation: masked-animation 4s linear infinite;
-    font-size: 25px;
-    text-align: center;
-}
-@keyframes masked-animation {
-    0% {
-        background-position: 0  0;
-    }
-    100% {
-        background-position: -100%  0;
-    }
-}
-
-.right {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 49%;
-    height: 100%;
-    display: inline-block;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.main {
-    width: 100%;
-    position: relative;
-}
-
-.left-menu {
-    width: 320px;
-    height: 830px;
-    margin: 15px;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    background-color: aliceblue;
-}
-
-.right-content {
-    width: 80%;
-    margin-left: 350px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 15px;
-    display: inline-block;
-    background-color: aliceblue;
-    border-radius: 10px;
-}
-
-.footer {
-    width: 100%;
-    height: 50px;
-    background-color: rgb(136, 202, 221);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav{
-    display: block;
-    list-style-type: disc;
-    height: 35px;
-    width: 60%;
-    display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    border: 1px solid #dedede;
 }
-.nav li{
-    display: inline-block;
-    width: 60px;
-    height: 25px;
-    font-size: 18px;
-    border: 1px solid white;
+.article-list li:hover{
+    border: 1px solid rgb(12, 174, 219);
+}
+.recommend{
+    height: 52px;
+    width: 46px;
+    padding-top: 6px;
+    background: url(../../../Imgs/icon/upup.gif) no-repeat;
     text-align: center;
-}
-.nav li a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.search{
-    height: 140px;
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.index-search{
-    text-align: center;
-    margin: 5px;
-}
-.baidu-search{
-    text-align: center;
-    margin: 5px;
-}
-.search label{
-    padding-left: 15px;
-    font-weight: bold;
-}
-.link{
-    display: flex;
-    height: 250px;
-    padding: 15px;
-    flex-direction: column-reverse;
-}
-.link label{
-    font-weight: bold;
-}
-.link-nav li{
-    margin-left: 25px;
-    margin-top: 15px;
-}
-.link-nav li a{
-    color:rgb(139, 205, 222);
-    text-decoration: none;
-}
-.link-nav li a:hover{
-    color: chartreuse;
-}
-.article-title{
-    text-align: center;
-}
-.article-title h2{
-    font-family:"楷体";
-}
-.bolg-message{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-}
-.head-pic{
-    width: 200px;
-    display: flex;
-    align-items: center;
-}
-.head-pic img{
-    width: 50px;
-    height: 50px;
-}
-.head-pic span{
-    display: inline-block;
-}
-.head-pic p{
-    display: flex;
-    align-items: center;
-}
-.fans{
-    display: inline-block;
-}
-.name{
-    display: inline-block;
-}
-.author{
-    height: 100%;
-    width: 80px;
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction:column;
 }
 .bolg-block{
+    align-self:flex-end;
+    color: rgb(12, 174, 219);
+}
+.clear{
+    clear: both;
+}
+.title{
+   width: 600px;
+   display: flex;
+   align-items: center;
+   padding-left: 25px;
+}
+.title h2{
+    display: inline-block;
+}
+.blog-a{
     display: flex;
-    align-items: center;
+}
+.summary{
+    height: 120px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+.summary p{
+
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing:5px;
+}
+.summary span{
+    color: rgb(12, 174, 219);
+}

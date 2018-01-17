@@ -177,4 +177,3 @@ G:\Git\SBK-Bolg\Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
 G:\Git\SBK-Bolg\Common\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 G:\Git\SBK-Bolg\Common\obj\Debug\Common.dll
 G:\Git\SBK-Bolg\Common\obj\Debug\Common.pdb
-G:\Git\SBK-Bolg\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

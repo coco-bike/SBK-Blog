@@ -86,6 +86,38 @@ namespace Session
                     return scope.Resolve<IUserAdminDal>();
                 }
             }
+
+            public static IBlogArticleWebDal CreateBlogArticleDal()
+            {
+                using(var scope = container.BeginLifetimeScope())
+                {
+                    return scope.Resolve<IBlogArticleWebDal>();
+                }
+            }
+
+            public static IBlogCommentWebDal CreateBlogCommentDal()
+            {
+                using (var scope = container.BeginLifetimeScope())
+                {
+                    return scope.Resolve<IBlogCommentWebDal>();
+                }
+            }
+
+            public static IBlogTypeWebDal CreateBlogTypeDal()
+            {
+                using (var scope = container.BeginLifetimeScope())
+                {
+                    return scope.Resolve<IBlogTypeWebDal>();
+                }
+            }
+
+            public static IBlogFileWebDal CreateBlogFileDal()
+            {
+                using (var scope = container.BeginLifetimeScope())
+                {
+                    return scope.Resolve<IBlogFileWebDal>();
+                }
+            }
         }
     }
 

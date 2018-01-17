@@ -10,5 +10,6 @@ namespace Dal
 {
     public class AuthorityDal:BaseDal<AuthorityModel>,IAuthorityDal
     {
+
     }
 }

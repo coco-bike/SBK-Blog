@@ -15,5 +15,9 @@ namespace UI.Areas.Web.Controllers
         {
             return View();
         }
+        public ActionResult article()
+        {
+            return View();
+        }
     }
 }

@@ -49,7 +49,15 @@
     <Compile Include="Admin\IAuthorityAdminDal.cs" />
     <Compile Include="Admin\IRoleAdminDal.cs" />
     <Compile Include="Admin\IUserAdminDal.cs" />
+    <Compile Include="Base\Web\IBlogArticleDal.cs" />
+    <Compile Include="Base\Web\IBlogCommentDal.cs" />
+    <Compile Include="Base\Web\IBlogFileDal.cs" />
+    <Compile Include="Base\Web\IBlogTypeDal.cs" />
     <Compile Include="Web\IAuthorityWebDal.cs" />
+    <Compile Include="Web\IBlogArticleWebDal.cs" />
+    <Compile Include="Web\IBlogCommentWebDal.cs" />
+    <Compile Include="Web\IBlogFileWebDal.cs" />
+    <Compile Include="Web\IBlogTypeWebDal.cs" />
     <Compile Include="Web\IRoleWebDal.cs" />
     <Compile Include="Web\IUserWebDal.cs" />
     <Compile Include="Base\Admin\IAdminAuthorityDal.cs" />

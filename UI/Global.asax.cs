@@ -85,12 +85,49 @@ namespace UI
                     new UserModel(){BuildTime=DateTime.Now,Count=0,EMail="112233@qq.com",HeadPicUrl="~/Imgs/HeadPic/headpic-2.jpg",LoginTime=DateTime.Now,Type=2,Pwd= Common.EncryptionHelper.GetMd5Str("112233"),State=1,TelNumber="155555555",Name="MrSong",UpdateTime=DateTime.Now,Role=role2}                    
                 };
                 userService.AddRange(userList);
-                //var user1 = userService.GetList(s => s.Name == "MrChen"&&s.State==1).ToList().FirstOrDefault();
-                //var user2 = userService.GetList(s => s.Name == "MrSong" && s.State == 1).ToList().FirstOrDefault();
-                //user1.Role = role1;
-                //user2.Role = role2;
-                //userService.Update(user1);
-                //userService.Update(user2);
+
+                UserModel user11 = new UserModel();
+                user11 = userService.GetList(s => s.Id == 1).ToList().FirstOrDefault();
+
+                //博客类型
+                IBlogTypeWebService blogTypeService = new BlogTypeWebService();
+                List<BlogTypes> typeList = new List<BlogTypes>(){
+                    new BlogTypes(){CreateTime=DateTime.Now,State=1,TypeName="类型1",UpdateTmie=DateTime.Now,BlogArticles =new List<BlogArticle>()},
+                    new BlogTypes(){CreateTime=DateTime.Now,State=1,TypeName="类型2",UpdateTmie=DateTime.Now,BlogArticles =new List<BlogArticle>()},
+                };
+                blogTypeService.AddRange(typeList);
+
+                var type1 = blogTypeService.GetList(s => s.Id == 1).ToList().FirstOrDefault();
+                var type2 = blogTypeService.GetList(s => s.Id == 2).ToList().FirstOrDefault();
+                BlogTypes type11 = new BlogTypes();
+                type11 = type1;
+                BlogTypes type22 = new BlogTypes();
+                type22 = type2;
+
+                //博客文章
+                IBlogArticleWebService blogArticleService = new BlogArticleWebService();
+                List<BlogArticle> articleList = new List<BlogArticle>()
+                {
+                    new BlogArticle(){Address="1313",Content="1211122212",CreateTime=DateTime.Now,State=1,Title="测试1",UpdateTime=DateTime.Now,WatchCount=1,ZanCount=0,BlogComments=new List<BlogComment>(),Type=type11 },
+                    new BlogArticle(){Address="1312",Content="1211122212",CreateTime=DateTime.Now,State=1,Title="测试2",UpdateTime=DateTime.Now,WatchCount=1,ZanCount=0,BlogComments=new List<BlogComment>(),Type=type22 }
+                };
+                blogArticleService.AddRange(articleList);
+
+                BlogArticle article1 = new BlogArticle();
+                article1 = blogArticleService.GetList(s => s.Id == 1).ToList().FirstOrDefault();
+
+                //博客评论
+                IBlogCommentWebService blogCommentService = new BlogCommentWebService();
+                List<BlogComment> commentList = new List<BlogComment>(){
+                    new BlogComment(){Content="你好啊",CreateTime=DateTime.Now,State=1,CommentId=0,BlogArticle=article1,User=user11},
+                    new BlogComment(){Content="你好啊",CreateTime=DateTime.Now,State=1,CommentId=1,BlogArticle=article1,User=user11},
+                };
+                blogCommentService.AddRange(commentList);
+
+               
+               
+
+
 
                 //管理员数据
                 IAdminUserService adminUserService = new AdminUserService();

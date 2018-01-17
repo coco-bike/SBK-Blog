@@ -40,7 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\Web\IBlogArticleService.cs" />
+    <Compile Include="Base\Web\IBlogCommentService.cs" />
+    <Compile Include="Base\Web\IBlogFileService.cs" />
+    <Compile Include="Base\Web\IBlogTypeService.cs" />
     <Compile Include="Web\IAuthorityWebService.cs" />
+    <Compile Include="Web\IBlogArticleWebService.cs" />
+    <Compile Include="Web\IBlogCommentWebService.cs" />
+    <Compile Include="Web\IBlogFileWebService.cs" />
+    <Compile Include="Web\IBlogTypeWebService.cs" />
     <Compile Include="Web\IRoleWebService.cs" />
     <Compile Include="Web\IUserWebService.cs" />
     <Compile Include="Base\Admin\IAdminAuthorityService.cs" />

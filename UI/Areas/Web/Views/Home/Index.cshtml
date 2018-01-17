@@ -1,131 +1,82 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="~/Content/Plugs/DateTime/schedule.css" rel="stylesheet" />
+﻿@{
+    ViewBag.Title = "主页";
+    Layout = "~/Areas/Web/Views/Shared/Home_Layout.cshtml";
+}
+@section MySection{
     <link href="~/Areas/Web/Css/home.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_234130_nem7eskcrkpdgqfr.css">
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <title>博客主页</title>
-</head>
-<body>
-    <div class="home">
-        <div class="headr">
-            <span class="left">
-                <h1>
-                    薄荷少年博客
-                </h1>
-                <div class="text">
-                    <p>
-                        Tomorrow is another day
-                    </p>
-                </div>              
-            </span>
-            <span class="right">
-                <ul class="nav">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">文章</a></li>
-                    <li><a href="#">联系</a></li>
-                    <li><a href="#">订阅</a></li>
-                    <li><a href="#">管理</a></li>                    
-                </ul>
-            </span>
-        </div>
-        <div class="main">
-            <div class="left-menu">
-                <div id='schedule-box' class="boxshaw">
+}
+@section MySection1{
+    <script src="~/Areas/Web/Scripts/home.js"></script>
+}
+<div class="article_content">
+    <ul class="article-list">
+        <li>
+            <div class="blog-a">
+                <div class="recommend">
+                    <span>111</span>
                 </div>
-                <div class="search">
-                    <div class="index-search">
-                        <input type="text" id="index-input"/>
-                        <input type="button" value="本站搜索" onclick="searchIndex()"/>
-                    </div>
-                    <div class="baidu-search">
-                        <input type="text" id="baidu-input"/>
-                        <input type="button" value="百度搜索" onclick="searchBaidu()"/>                        
-                    </div>
-                    <label>搜索:</label>
-                </div>
-                <div class="link">
-                     <ul class="link-nav">
-                        <li><a href="">我的文章</a></li>
-                        <li><a href="">我的评论</a></li> 
-                        <li><a href="">最新评论</a></li> 
-                        <li><a href="">我的标签</a></li>                        
-                     </ul>
-                    <label>常用链接:</label>
+                <div class="title">
+                    <h2>文章标题</h2>
                 </div>
             </div>
-            <div class="right-content">
-                <div class="article-title">
-                     <h2>我的文章标题</h2>
+            <div class="summary">
+                <p>摘要：五禽戏是我国古代体育锻炼的一种方法，创始人是东汉末年名医华佗。华佗总结了前人模仿鸟兽动作以锻炼身体的传统做法，创编了一套保健体操，包括虎、鹿、熊、猿、鸟的动作和姿态，也就是五禽戏。 《三国志·华佗传》记载：“吾有一术，名五禽之戏，一曰虎，二曰鹿，三曰熊，四曰猿，五曰鸟。亦以除疾，兼利蹄足，以当导引。</p>
+                <span>阅读全文</span>
+            </div>
+            <div class="bolg-block">
+                <p>posted*2018-01-11 14:47 薄荷灬少年 阅读(1) 评论(0) 编辑 收藏</p>
+            </div>
+        </li>
+        <li>
+            <div class="blog-a">
+                <div class="recommend">
+                    <span>111</span>
                 </div>
-                <div class="article-content">
-
+                <div class="title">
+                    <h2>文章标题</h2>
                 </div>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                <p>11111111111111111111</p>
-                 <div class="bolg-message">
-                 <div class="head-pic">
-                     <img src="~/Imgs/HeadPic/headpic-1.jpg" />
-                     <div class="author">
-                     <span class="name">薄荷少年</span>
-                     <span class="fans">
-                         <label>粉丝:1</label>
-                     </span>  
-                     </div>                   
-                 </div>
-                 <div class="bolg-block">
-                    <p>posted 2018-01-11 14:47 薄荷灬少年 阅读(1) 评论(0) 编辑 收藏</p>
-                 </div>
-            </div>  
-            </div>         
-        </div>
-        <div class="footer">
-          <span>Copyright ©2018 薄荷少年</span>
-        </div>
-    </div>
-    <script src="~/Content/Plugs/DateTime/schedule.js"></script>
-    <script src="~/Areas/Web/Scripts/home.js"></script>
-</body>
-</html>
+            </div>
+            <div class="summary">
+                <p>摘要：五禽戏是我国古代体育锻炼的一种方法，创始人是东汉末年名医华佗。华佗总结了前人模仿鸟兽动作以锻炼身体的传统做法，创编了一套保健体操，包括虎、鹿、熊、猿、鸟的动作和姿态，也就是五禽戏。 《三国志·华佗传》记载：“吾有一术，名五禽之戏，一曰虎，二曰鹿，三曰熊，四曰猿，五曰鸟。亦以除疾，兼利蹄足，以当导引。</p>
+                <span>阅读全文</span>
+            </div>
+            <div class="bolg-block">
+                <p>posted*2018-01-11 14:47 薄荷灬少年 阅读(1) 评论(0) 编辑 收藏</p>
+            </div>
+        </li>
+        <li>
+            <div class="blog-a">
+                <div class="recommend">
+                    <span>111</span>
+                </div>
+                <div class="title">
+                    <h2>文章标题</h2>
+                </div>
+            </div>
+            <div class="summary">
+                <p>摘要：五禽戏是我国古代体育锻炼的一种方法，创始人是东汉末年名医华佗。华佗总结了前人模仿鸟兽动作以锻炼身体的传统做法，创编了一套保健体操，包括虎、鹿、熊、猿、鸟的动作和姿态，也就是五禽戏。 《三国志·华佗传》记载：“吾有一术，名五禽之戏，一曰虎，二曰鹿，三曰熊，四曰猿，五曰鸟。亦以除疾，兼利蹄足，以当导引。</p>
+                <span>阅读全文</span>
+            </div>
+            <div class="bolg-block">
+                <p>posted*2018-01-11 14:47 薄荷灬少年 阅读(1) 评论(0) 编辑 收藏</p>
+            </div>
+        </li>
+        <li>
+            <div class="blog-a">
+                <div class="recommend">
+                    <span>111</span>
+                </div>
+                <div class="title">
+                    <h2>文章标题</h2>
+                </div>
+            </div>
+            <div class="summary">
+                <p>摘要：五禽戏是我国古代体育锻炼的一种方法，创始人是东汉末年名医华佗。华佗总结了前人模仿鸟兽动作以锻炼身体的传统做法，创编了一套保健体操，包括虎、鹿、熊、猿、鸟的动作和姿态，也就是五禽戏。 《三国志·华佗传》记载：“吾有一术，名五禽之戏，一曰虎，二曰鹿，三曰熊，四曰猿，五曰鸟。亦以除疾，兼利蹄足，以当导引。</p>
+                <span>阅读全文</span>
+            </div>
+            <div class="bolg-block">
+                <p>posted*2018-01-11 14:47 薄荷灬少年 阅读(1) 评论(0) 编辑 收藏</p>
+            </div>
+        </li>
+    </ul>
+</div>
