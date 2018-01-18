@@ -1,119 +1,59 @@
 ﻿@{
-    Layout = null;
+    ViewBag.Title = "后台管理页面";
+    Layout = "~/Areas/Web/Views/Shared/WebAdmin_Layout.cshtml";
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>博客管理页面</title>
-    <link href="~/Content/Style.css" rel="stylesheet" />
+@section MySection{
     <link href="~/Areas/Web/Css/mangemantIndex.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="container">
-        <div class="top">
-            <div class="left-block">
-                <div class="title">
-                    <h1>SongBiKe网络博客后台</h1>
-                </div>
-            </div>
-            <div class="right-block">
-                    <div class="top-block">
+}
 
-                    </div>
-                    <div class="bottom-block">
-                        <ul class="nav">
-                            <li><a href="#">文章</a></li>
-                            <li><a href="#">评论</a></li>
-                            <li><a href="#">相册</a></li>
-                            <li><a href="#">文件</a></li>
-                            <li><a href="#">设置</a></li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-        <div class="left">
-            <div class="operating">
-                <label>操作</label>
-                <ul>
-                    <li><div class="double"></div><a href="#">添加新文章</a></li>
-                </ul>
-            </div>
-            <div class="classification">
-                <label>分类</label>
-                <ul>
-                    <li><div class="double"></div><a href="#">所有分类</a></li>
-                    <li><div class="double"></div><a href="#">添加分类</a></li>
-                    <li><div class="double"></div><a href="#">编辑分类</a></li>                    
-                </ul>
-            </div>
-        </div>
-        <div class="center">
-            <div class="add">
-                <p>添加文章</p>
-            </div>
-            <div class="article-title">
-                <label>标题</label>
-                <input type="text"/>
-            </div>
-            <div class="text-plug">
-                <script id="container" name="content" type="text/plain">
-                    这里写你的文章内容
-                </script>
-            </div>
-            <div class="article-classification">
-                <label>标签</label>
-                <ul>
-                    <li><input type="checkbox" checked="checked" />分类1</li>
-                    <li><input type="checkbox"/>分类2</li>
-                    <li><input type="checkbox"/>分类3</li>
-                    <li><input type="checkbox"/>分类4</li>
-                    <li><input type="checkbox"/>分类5</li>                    
-                </ul>
-            </div>
-            <div class="advanced-setting">
-                <label>是否发布</label>
-                <input type="checkbox" checked="checked" />
-                <label>是否可评论</label>
-                <input type="checkbox" checked="checked" />                
-            </div>
-
-            <div class="release">
-                <input type="button" value="发布">
-                <input type="button" value="取消">                
-            </div>
-        </div>
-        <div class="bottom">
-            <p>Copyright ©2018 薄荷少年</p>
-        </div>
-    </div>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+@section MySection3{
     <script src="~/Content/Plugs/Ueditor/ueditor.config.js"></script>
     <script src="~/Content/Plugs/Ueditor/ueditor.all.js"></script>
     <script src="~/Content/Plugs/Ueditor/ueditor.parse.js"></script>
     <script src="~/Areas/Web/Scripts/mangemantIndex.js"></script>
-    <!-- 实例化编辑器 -->
-    <script type="text/javascript">
-        var ue = UE.getEditor('container');
+}
+@section MySection1{
+    <ul>
+        <li><div class="double"></div><a href="#">添加新文章</a></li>
+    </ul>
+}
+@section MySection2{
+    <ul>
+        <li><div class="double"></div><a href="#">所有分类</a></li>
+        <li><div class="double"></div><a href="#">添加分类</a></li>
+        <li><div class="double"></div><a href="#">编辑分类</a></li>
+    </ul>
+}
+<div class="add">
+    <p>添加文章</p>
+</div>
+<div class="article-title">
+    <label>标题</label>
+    <input id="input-title" type="text" />
+</div>
+<div class="text-plug">
+    <script id="container" name="content" type="text/plain">
+        这里写你的文章内容
     </script>
-    <script>
-        function posthtml() {
-            var ue = UE.getEditor('container');
-            var content = ue.getContent();
-            $.ajax({
-                type: "post",
-                url: "http://localhost:30088/ue/PostText",
-                data: {
-                    'htmltext': content
-                },
-                dataType: "json",
-                success: function (data) {
-                    alert(data);
-                }
-            });
-        }
+</div>
+<div class="article-classification">
 
-    </script>
-</body>
-</html>
+    <label>标签:</label>
+    <label><input name="Fruit" type="radio" value="1" checked="checked" />苹果 </label>
+</div>
+<div class="advanced-setting">
+    <label>是否发布</label>
+    <input id="checkbox-1" type="checkbox" checked="checked" />
+    <label>是否可评论</label>
+    <input id="checkbox-2" type="checkbox" checked="checked" />
+</div>
+
+<div class="release">
+    <input id="submit" type="button" value="发布">
+    <input id="cancel" type="button" value="取消">
+</div>
+
+
+
+
+

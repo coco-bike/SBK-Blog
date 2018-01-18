@@ -1,0 +1,152 @@
+﻿body {
+    background-color: rgb(187, 187, 187);
+    padding: 15px;
+}
+
+.container {
+    height: 1200px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.top {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.left-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(78, 79, 115, 1);
+    border-radius: 5px;
+}
+
+.right-block {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.title h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    border: 1px solid rgba(78, 79, 115, 1);
+}
+
+.nav li {
+    font-size: 25px;
+    width: 120px;
+    height: 80px;
+}
+
+.nav li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: chartreuse;
+    border-right: 1px solid #000000;
+}
+
+.nav li a:hover {
+    color: blue;
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 18%;
+    height: 760px;
+}
+
+.operating {
+    margin-top: 15px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.operating label {
+    display: inline-block;
+    width: 100%;
+    background-color: pink;
+    text-align: center;
+}
+
+.classification label {
+    display: inline-block;
+    width: 100%;
+    background-color: pink;
+    text-align: center;
+}
+
+.left a:hover {
+    font-size: 20px;
+    color: blue;
+}
+
+.classification {
+    margin-top: 15px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.center {
+    display: inline-block;
+    position: absolute;
+    left: 18%;
+    top: 150px;
+    width: 82%;
+    padding: 15px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: inline-block;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.bottom p {
+    display: inline-block;
+}
+
+.double {
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    background: url(../../../Imgs/icon/doubleline.png) no-repeat;
+    background-size: cover;
+}

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_234130_nem7eskcrkpdgqfr.css">
     <link href="~/Areas/Web/Css/home_Layout.css" rel="stylesheet" />
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-
 </head>
 <body>
     <div class="home">
@@ -41,12 +40,16 @@
                 </div>
                 <div class="search">
                     <div class="index-search">
-                        <input type="text" id="index-input" />
-                        <input type="button" value="本站搜索" onclick="searchIndex()" />
+                        <form method=get action="http://www.google.com/search"  target="_blank">
+                            <input type=text name=q  value="">
+                            <input type=submit name=btnG value="谷歌搜索">
+                        </form>
                     </div>
                     <div class="baidu-search">
-                        <input type="text" id="baidu-input" />
-                        <input type="button" value="百度搜索" onclick="searchBaidu()" />
+                        <form action="http://www.baidu.com/baidu" target="_blank">
+                        <input type="text" name="word" id="baidu-input" />
+                        <input type="submit" value="百度搜索" />
+                        </form>
                     </div>
                     <label>搜索:</label>
                 </div>

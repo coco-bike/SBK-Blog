@@ -206,6 +206,7 @@
     <Content Include="Areas\Admin\Scripts\admin-sonlayout.js" />
     <Content Include="Areas\Admin\Scripts\admin-user.js" />
     <Content Include="Areas\Web\Css\web-register.css" />
+    <Content Include="Areas\Web\Css\webAdmin_Layout.css" />
     <Content Include="Areas\Web\Scripts\article.js" />
     <Content Include="Areas\Web\Scripts\home.js" />
     <Content Include="Areas\Web\Scripts\home_Layout.js" />
@@ -213,6 +214,7 @@
     <Content Include="Areas\Web\Scripts\web-forgotpassword.js" />
     <Content Include="Areas\Web\Scripts\web-login.js" />
     <Content Include="Areas\Web\Scripts\web-register.js" />
+    <Content Include="Areas\Web\Scripts\webAdmin_Layout.js" />
     <Content Include="Bin\Antlr3.Runtime.dll" />
     <Content Include="Bin\Autofac.Configuration.dll" />
     <Content Include="Bin\Autofac.dll">
@@ -2970,6 +2972,7 @@
     <Content Include="Content\Plugs\Ueditor\third-party\video-js\font\vjs.eot" />
     <Content Include="Content\Plugs\Ueditor\third-party\video-js\font\vjs.ttf" />
     <Content Include="Content\Plugs\Ueditor\third-party\video-js\font\vjs.woff" />
+    <Content Include="Areas\Web\Views\Shared\WebAdmin_Layout.cshtml" />
     <None Include="Properties\PublishProfiles\11111.pubxml" />
     <None Include="Properties\PublishProfiles\222222222.pubxml" />
     <None Include="Properties\PublishProfiles\2323.pubxml" />

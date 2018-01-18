@@ -10,11 +10,9 @@ namespace UI.Areas.Web.Controllers
     {
         //
         // GET: /Web/Management/
-
         public ActionResult Index()
         {
             return View();
         }
-
     }
 }
