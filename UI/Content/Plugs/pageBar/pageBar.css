@@ -1,0 +1,36 @@
+
+.page_wrap{
+	text-align:center;
+	font-size:14px;
+	padding: 0px;
+}
+.page_wrap a{
+	display:inline-block;
+	line-height:38px;
+	width: 38px;/*ҳ�����*/
+	height:36px;/*ҳ���߶�*/
+	border:1px solid red;
+	border-radius: 5px;
+	text-decoration:none;
+	color:black;
+	margin-right: 5px;
+	padding: 0px;
+}
+.page_wrap a:hover{
+	background:blue;
+}
+
+.page_wrap .cur{
+	color:red;
+	background:white;/*�����ı�����ɫ*/
+}
+.page_wrap span{
+	margin:0 5px;
+	color:black;
+}
+.page_wrap input{
+	width:30px;
+	height:20px;
+	text-align:center;
+	border: 1px solid #EBEBEB;
+}

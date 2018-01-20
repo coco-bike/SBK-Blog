@@ -15,5 +15,11 @@ namespace UI.Areas.Web.Controllers
             return View();
         }
 
+        public ActionResult EditArticle(string id)
+        {
+            ViewBag.Id = id;
+            return View();
+        }
+
     }
 }

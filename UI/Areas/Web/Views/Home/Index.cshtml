@@ -3,13 +3,15 @@
     Layout = "~/Areas/Web/Views/Shared/Home_Layout.cshtml";
 }
 @section MySection{
-    <link href="~/Areas/Web/Css/home.css" rel="stylesheet" />
+<link href="~/Content/Plugs/pageBar/pageBar.css" rel="stylesheet" />
+<link href="~/Areas/Web/Css/Home/home.css" rel="stylesheet" />
 }
 @section MySection1{
-    <script src="~/Areas/Web/Scripts/home.js"></script>
+<script src="~/Content/Plugs/pageBar/pageBar.js"></script>
+<script src="~/Areas/Web/Scripts/Home/home.js"></script>
 }
 <div class="article_content">
-    <ul class="article-list">
+    <ul id="article-list" class="article-list">
         <li>
             <div class="blog-a">
                 <div class="recommend">
@@ -26,6 +28,7 @@
             <div class="bolg-block">
                 <p>posted*2018-01-11 14:47 薄荷灬少年 阅读(1) 评论(0) 编辑</p>
             </div>
-        </li>
-    </ul>
+        </li>      
+    </ul>  
+    <div class="page_wrap" id="J_page_wrap"></div> 
 </div>

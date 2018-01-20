@@ -147,6 +147,58 @@
     display: inline-block;
     height: 21px;
     width: 21px;
-    background: url(../../../Imgs/icon/doubleline.png) no-repeat;
+    background: url(../../../../Imgs/icon/doubleline.png) no-repeat;
     background-size: cover;
+}
+
+.operating ul {
+    padding: 15px;
+}
+
+.operating ul li {
+    display: flex;
+    align-items: center;
+}
+.classification ul{
+    padding: 15px;
+}
+.classification ul li{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.article-classification ul {
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.article-classification ul li {
+    display: inline-block;
+}
+.add {
+    border-bottom: 1px dashed black;
+    border-top: 1px solid black;
+}
+
+.add p {
+    background-color: rgb(229, 238, 247)
+}
+
+.release {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.release input {
+    width: 60px;
+    height: 40px;
+    display: inline-block;
+    background-color: rgba(107, 139, 179, 1);
+    color: rgb(255, 255, 255);
+}
+
+.release input:hover {
+    background-color: rgb(239, 242, 245);
+    color: rgb(219, 22, 22);
 }

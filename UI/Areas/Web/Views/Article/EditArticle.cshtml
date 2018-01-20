@@ -1,18 +1,18 @@
 ﻿@{
-    ViewBag.Title = "添加新文章";
+    ViewBag.Title = "EditArticle";
     Layout = "~/Areas/Web/Views/Shared/WebAdmin_Layout.cshtml";
 }
-@section MySection{
-<link href="~/Areas/Web/Css/Aritle/addArticle.css" rel="stylesheet" />
+
+@section MySection{ 
+<link href="~/Areas/Web/Css/Aritle/editArticle.css" rel="stylesheet" />
 }
 
 @section MySection3{
     <script src="~/Content/Plugs/Ueditor/ueditor.config.js"></script>
     <script src="~/Content/Plugs/Ueditor/ueditor.all.js"></script>
     <script src="~/Content/Plugs/Ueditor/ueditor.parse.js"></script>
-    <script src="~/Areas/Web/Scripts/Article/addArticle.js"></script>
+    <script src="~/Areas/Web/Scripts/Article/editArticle.js"></script>
 }
-
 @section MySection1{
     <ul>
         <li><div class="double"></div><a href="#">添加新文章</a></li>
@@ -25,8 +25,8 @@
         <li><div class="double"></div><a href="#">编辑分类</a></li>
     </ul>
 }
-<div class="add">
-    <p>添加文章</p>
+<div class="edit">
+    <p>编辑文章<span id="span-id">@ViewBag.Id</span></p>
 </div>
 <div class="article-title">
     <label>标题</label>
@@ -34,11 +34,10 @@
 </div>
 <div class="text-plug">
     <script id="container" name="content" type="text/plain">
-        这里写你的文章内容
+        
     </script>
 </div>
 <div class="article-classification">
-
     <label>标签:</label>
     <label><input name="Fruit" type="radio" value="1" checked="checked" />苹果 </label>
 </div>
@@ -50,11 +49,6 @@
 </div>
 
 <div class="release">
-    <input id="submit" type="button" value="发布">
-    <input id="cancel" type="button" value="取消">
+    <input id="submit" type="button" value="保存">
+    <input id="cancel" type="button" value="清空">
 </div>
-
-
-
-
-

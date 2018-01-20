@@ -1,6 +1,35 @@
 ﻿@{
-    ViewBag.Title = "File";
+    ViewBag.Title = "文件";
     Layout = "~/Areas/Web/Views/Shared/WebAdmin_Layout.cshtml";
 }
+@section MySection{
+<link href="~/Areas/Web/Css/File/files.css" rel="stylesheet" />
 
-<h2>File</h2>
+}
+@section MySection3{
+<script src="~/Areas/Web/Scripts/File/files.js"></script>
+}
+@section MySection1{
+    <ul>
+        <li><div class="double"></div><a href="#">添加新文件</a></li>
+    </ul>
+}
+@section MySection2{
+    <ul>
+        <li><div class="double"></div><a href="#">所有分类</a></li>
+        <li><div class="double"></div><a href="#">添加分类</a></li>
+        <li><div class="double"></div><a href="#">编辑分类</a></li>
+    </ul>
+}
+<div class="add">
+    <p>添加新图片</p>
+</div>
+
+<div class="插件">
+
+</div>
+
+<div class="release">
+    <input id="submit" type="button" value="发布">
+    <input id="cancel" type="button" value="取消">
+</div>

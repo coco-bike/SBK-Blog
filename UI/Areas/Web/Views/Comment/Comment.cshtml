@@ -1,6 +1,39 @@
 ﻿@{
-    ViewBag.Title = "Comment";
+    ViewBag.Title = "评论";
     Layout = "~/Areas/Web/Views/Shared/WebAdmin_Layout.cshtml";
 }
+@section MySection{
+    
+<link href="~/Areas/Web/Css/Comment/comment.css" rel="stylesheet" />
+}
+@section MySection3{
+<script src="~/Areas/Web/Scripts/Comment/comment.js"></script>
+}
+@section MySection1{
+    <ul>
+        <li><div class="double"></div><a href="#">添加新评论</a></li>
+    </ul>
+}
+@section MySection2{
+    <ul>
+        <li><div class="double"></div><a href="#">所有分类</a></li>
+        <li><div class="double"></div><a href="#">添加分类</a></li>
+        <li><div class="double"></div><a href="#">编辑分类</a></li>
+    </ul>
+}
+<div class="add">
+    <p>添加新图片</p>
+</div>
 
-<h2>Comment</h2>
+<div class="插件">
+
+</div>
+
+<div class="release">
+    <input id="submit" type="button" value="发布">
+    <input id="cancel" type="button" value="取消">
+</div>
+
+
+
+
