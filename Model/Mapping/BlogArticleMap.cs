@@ -26,6 +26,7 @@ namespace Model.Mapping
             this.Property(t => t.CreateTime).IsRequired();
             this.Property(t => t.State).IsRequired();
             this.Property(t => t.Title).IsRequired().HasMaxLength(50);
+            this.Property(t => t.Summary).IsRequired().HasMaxLength(50);
             this.Property(t => t.UpdateTime).IsRequired();
             this.Property(t => t.WatchCount).IsRequired();
             this.Property(t => t.ZanCount).IsRequired();

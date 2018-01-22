@@ -22,18 +22,20 @@
 });
 
 function getclassifica(){
+    var url="../../../Article/GetArticleType"
     $.ajax({
         type: "Get",
-        url: "url",
+        url: url,
         data: "",
         dataType: "Json",
         success: function (data) {
             count = data.length;
+            var str="";
             for (var i = 0; i < count; i++) {
-                var str;
-                str = "<label><input name='Fruit' type='radio' value=" + JSON.stringify(data[i].valueid) + " " + "/>" + data[i].name + "</label>"
-                $(".article-classification").append(str);
+                str = "<label><input name='Fruit' type='radio' value=" 
+                + data[i].valueid + " " + "/>" + data[i].name + "</label>"
             };
+            $(".article-classification").append(str);
         },
         error: function () {
             alert("检查网络");
@@ -75,15 +77,20 @@ function gethtmlcontent(){
     var articleid = $("#span-id").text();
     $.ajax({
         type: "Post",
-        url: "../../Article/GetArticle",
+        url: "../../../Article/GetEditArticleContent",
         data: {'id':articleid},
         dataType: "Json",
         success: function (data) {
             var ue = UE.getEditor('container');
             ue.setContent(data.Content);
+            if(data.State==1){
+                var checkbox1text=true;
+            }else{
+                var checkbox1text=false;
+            }
             $("#input-title").val()=data.Title;
-            $("input:radio[name='Fruit']").eq(data.Typeid).attr("checked","checked");
-            $("#checkbox-1").attr("checked",data.State);
+            $("input:radio[name='Fruit']").eq(data.Typeid-1).attr("checked","checked");
+            $("#checkbox-1").attr("checked",checkbox1text);
             $("#checkbox-2").attr("checked",data.CommitState)
         }
     });

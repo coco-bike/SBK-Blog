@@ -30,15 +30,13 @@ function getMessage(page_now) {
             mydata = data.listdata;
             var s = "";
             for (var i = 0; i < mydata.length; i++) {
-                s += " <li><div class='blog-a'><div class='recommend'" + " " + " id='" + i + "'> <span>" +
+                s += " <li><div class='blog-a'><div class='recommend'" + " " + " id='" + data[i].Id + "'> <span>" +
                     data[i].ZanCount + "</span></div><div class='title'><h2>" + data[i].Title +
-                    "</h2></div></div><div class='summary'><p>" + data[i].Content + "</p><span><a href='" +
-                    data[i].address + "'>阅读全文</a></span> </div><div class='bolg-block'><p>posted*" +
-                    data[i].CreateTime + "薄荷灬少年 阅读(" + data[i].WatchCount + ") 评论(" + data[i].Comment +
-                    ")</p>";
-                $('#article-list').append(s);
-                s = "";
+                    "</h2></div></div><div class='summary'><p>" + data[i].Content + "</p><span><a href='javascript:void(0);' " +
+                   "onclick='readarticle("+data[i].Id + ")'>阅读全文</a></span> </div><div class='bolg-block'><p>posted* "+
+                    data[i].CreateTime+" 薄荷灬少年 阅读(" + data[i].WatchCount + ") 评论(" + data[i].CommentCount +")</p>";                
             }
+            $('#article-list').append(s);
             page.page_max = max;
             page.calculate_page(page_now); //page.calculate_page(当前页)
         }
@@ -51,27 +49,33 @@ $(function () {
 
     $(".recommend").click(function () {
         var id = $(this).attr("id");
+
+        addZan(id);
     });
 })
 
 
-function addZan(data) {
+function addZan(Id) {
     $.ajax({
         type: "Post",
-        url: "url",
+        url: "../../../Home/AddZan",
         data: {
-            'textid': data
+            'textid': Id
         },
         dataType: "dataType",
         success: function (data) {
             alert(data.Msg);
             var str;
-            str = "#" + data + "" + "span";
-            $(str).val() = data.data;
+            str = "'#" + Id + "" + "span'";
+            $(str).text() = data.data;
 
         },
         error: function () {
             alert("每篇文章每个用户只能点赞一次")
         }
     });
+}
+
+function readarticle(Id){
+    window.location.href="../../../Web/Home/Aritle?"+"id="+Id;
 }

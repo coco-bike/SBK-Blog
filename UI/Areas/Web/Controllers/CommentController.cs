@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Common;
+using UI.Controllers.Base;
 
 namespace UI.Areas.Web.Controllers
 {
-    public class CommentController : Controller
+    public class CommentController : JsonController
     {
         //
         // GET: /Web/Comment/
@@ -14,6 +16,17 @@ namespace UI.Areas.Web.Controllers
         public ActionResult Comment()
         {
             return View();
+        }
+
+        public JsonBackResult GetCommentList()
+        {
+            return JsonBackResult(ResultStatus.Success);
+
+        }
+        public JsonBackResult DestoryComment(string id)
+        {
+            return JsonBackResult(ResultStatus.Success);
+
         }
 
     }

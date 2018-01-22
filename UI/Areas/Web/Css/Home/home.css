@@ -14,7 +14,7 @@
     height: 52px;
     width: 46px;
     padding-top: 6px;
-    background: url(../../../Imgs/icon/upup.gif) no-repeat;
+    background: url(../../../../Imgs/icon/upup.gif) no-repeat;
     text-align: center;
 }
 .bolg-block{
@@ -36,6 +36,7 @@
 .blog-a{
     display: flex;
 }
+
 .summary{
     height: 120px;
     padding-top: 10px;

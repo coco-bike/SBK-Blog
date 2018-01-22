@@ -21,6 +21,10 @@ namespace Model
         /// </summary>
         public string Content { get; set; }
         /// <summary>
+        /// 简介
+        /// </summary>
+        public string Summary { get; set; }
+        /// <summary>
         /// 阅读人数
         /// </summary>
         public long WatchCount { get; set; }

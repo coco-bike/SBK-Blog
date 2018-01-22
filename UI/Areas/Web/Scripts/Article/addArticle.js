@@ -14,21 +14,24 @@
 
     //获取分类
     getclassifica();
+
 });
 
 function getclassifica() {
     $.ajax({
         type: "Get",
-        url: "url",
+        url: "../../../Article/GetArticleType",
         data: "",
         dataType: "Json",
         success: function (data) {
             count = data.length;
+            var str;
             for (var i = 0; i < count; i++) {
-                var str;
-                str = "<label><input name='Fruit' type='radio' value=" + JSON.stringify(data[i].valueid) + " " + "/>" + data[i].name + "</label>"
-                $(".article-classification").append(str);
+                str += "<label><input name='Fruit' type='radio' value=" 
+                + JSON.stringify(data[i].valueid) + " " + "/>" + data[i].name 
+                + "</label>"                
             };
+            $(".article-classification").append(str);
         },
         error: function () {
             alert("检查网络");
@@ -52,7 +55,7 @@ function posthtml() {
     var checkbox2 = $("#checkbox-2").is(":checked");
     $.ajax({
         type: "post",
-        url: "../../Article/PostArticle",
+        url: "../../Article/AddArticleContent",
         data: {
             'htmltext': content,
             'title': titletext,
