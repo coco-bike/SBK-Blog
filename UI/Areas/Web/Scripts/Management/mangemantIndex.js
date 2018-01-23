@@ -39,7 +39,7 @@ function getMessage(page_now) {
             var s = " ";
             //循环添加表格列
             for (var i = 0; i < mydata.length; i++) {
-                s = "<tr><th>"+mydata[i].Title+"</th><th>"+mydata[i].Time+"</th><th>"
+                s += "<tr><th>"+mydata[i].Title+"</th><th>"+mydata[i].Time+"</th><th>"
                 +mydata[i].State+"</th><th>"+mydata[i].WatchCount+"</th><th><a"+" "+"href='"
                 +"javascript:void(0);'"+" onclick='Edit("+mydata[i].Id+")'>"+"编辑</a></th><th><a"
                 +" "+"href='"+"javascript:void(0);'"+" onclick='Destory("+mydata[i].Id+")'>"

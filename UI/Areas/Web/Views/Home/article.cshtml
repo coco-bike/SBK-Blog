@@ -3,33 +3,63 @@
     Layout = "~/Areas/Web/Views/Shared/Home_Layout.cshtml";
 }
 @section MySection{
-<link href="~/Areas/Web/Css/Home/article.css" rel="stylesheet" />
+    <link href="~/Areas/Web/Css/Home/article.css" rel="stylesheet" />
 }
 @section MySection1{
-<script src="~/Areas/Web/Scripts/Home/article.js"></script>
+    <script src="~/Areas/Web/Scripts/Home/article.js"></script>
 }
 <div class="ID">
-<p>@ViewBag.Id</p>
+    <p>@ViewBag.Id</p>
 </div>
 <div class="article-title">
     <h2>我的文章标题</h2>
 </div>
 <div class="article-text">
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
-<p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
 </div>
 <div class="bolg-message">
     <div class="head-pic">
@@ -43,5 +73,29 @@
     </div>
     <div class="bolg-block">
         <p>posted*2018-01-11 14:47 薄荷灬少年 阅读(1) 评论(0)</p>
+    </div>
+</div>
+<div class="bolg-commit">
+    <div class="block-1">
+        <label>评论列表</label>
+        <ul>
+            <li>
+                <div class="commitmessage">
+                    <p>1楼 <span>2018-01-22 14:08</span>薄荷少年 <a href="javascript:void(0);" onclick="edit(1)">修改</a>
+                    <a href="javascript:void(0);" onclick="deleteCom(1)">删除</a></p>
+                    <p>122222222222222211212121212</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="block-2">
+        <label>发表评论</label>
+        <div class="commit-content">
+            <p>评论内容:</p>
+            <textarea id="committext"></textarea>
+        </div>
+        <input type="button" id="submit" onclick="postCommit()" value="提交评论">
+        <input type="button" id="save" onclick="saveCommit()" value="保存评论">
+        <input type="button" id="cancel" onclick="cancelCommit()" value="取消修改">
     </div>
 </div>

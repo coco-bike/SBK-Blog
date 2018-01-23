@@ -108,8 +108,8 @@ namespace UI
                 IBlogArticleWebService blogArticleService = new BlogArticleWebService();
                 List<BlogArticle> articleList = new List<BlogArticle>()
                 {
-                    new BlogArticle(){Address="1313",Content="1211122212",CreateTime=DateTime.Now,State=1,Title="测试1",UpdateTime=DateTime.Now,WatchCount=1,ZanCount=0,BlogComments=new List<BlogComment>(),Type=type11 },
-                    new BlogArticle(){Address="1312",Content="1211122212",CreateTime=DateTime.Now,State=1,Title="测试2",UpdateTime=DateTime.Now,WatchCount=1,ZanCount=0,BlogComments=new List<BlogComment>(),Type=type22 }
+                    new BlogArticle(){Address="1313",Content="1211122212",CreateTime=DateTime.Now,State=1,Title="测试1",UpdateTime=DateTime.Now,WatchCount=1,ZanCount=0,BlogComments=new List<BlogComment>(),Type=type11,Summary="aaa" },
+                    new BlogArticle(){Address="1312",Content="1211122212",CreateTime=DateTime.Now,State=1,Title="测试2",UpdateTime=DateTime.Now,WatchCount=1,ZanCount=0,BlogComments=new List<BlogComment>(),Type=type22,Summary="bbb" }
                 };
                 blogArticleService.AddRange(articleList);
 

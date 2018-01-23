@@ -49,6 +49,7 @@ function cancelhtml() {
 function posthtml() {
     var ue = UE.getEditor('container');
     var content = ue.getContent();
+    var summary = ue.getContentTxt().substring(0,100);
     var titletext = $("#input-title").val();
     var typeid = $("input:radio[name='Fruit']:checked").val();
     var checkbox1 = $("#checkbox-1").is(":checked");
@@ -60,6 +61,7 @@ function posthtml() {
             'htmltext': content,
             'title': titletext,
             'typeid': typeid,
+            'summary':summary,
             'checkbox1': checkbox1,
             'checkbox2': checkbox2
         },

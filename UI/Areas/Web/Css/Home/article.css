@@ -1,40 +1,105 @@
-﻿.bolg-message{
+﻿.bolg-message {
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-around;
+    line-height: 1.8em;
+    font-size: 20px;
 }
-.head-pic{
+
+.head-pic {
     width: 200px;
     display: flex;
     align-items: center;
 }
-.head-pic img{
+
+.head-pic img {
     width: 50px;
     height: 50px;
 }
-.head-pic span{
+
+.head-pic span {
     display: inline-block;
 }
-.head-pic p{
+
+.head-pic p {
     display: flex;
     align-items: center;
 }
-.fans{
+
+.fans {
     display: inline-block;
 }
-.name{
+
+.name {
     display: inline-block;
 }
-.author{
+
+.author {
     height: 100%;
     width: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
 }
-.bolg-block{
+
+.bolg-block {
     display: flex;
     align-items: center;
+}
+
+.bolg-block p {
+    color: rgb(49, 126, 243)
+}
+
+.bolg-commit {
+    margin-left: 210px;
+    font-size: 20px;
+}
+
+.bolg-commit label {
+    border-bottom: 1px solid #8A8A8A;
+    margin-top: 25px;
+}
+
+.bolg-commit ul li {
+    margin-top: 15px;
+}
+
+.commit-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.commit-content textarea {
+    font-size: 25px;
+    height: 300px;
+    width: 500px;
+    text-indent: 0px;
+}
+
+.block-1 {
+    margin-bottom: 25px;
+}
+
+#submit {
+    width: 80px;
+    height: 30px;
+}
+
+#save {
+    display: none;
+    width: 80px;
+    height: 30px;
+}
+
+#cancel {
+    display: none;
+    width: 80px;
+    height: 30px;
+}
+.commitmessage p{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

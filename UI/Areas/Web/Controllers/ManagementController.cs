@@ -22,5 +22,14 @@ namespace UI.Areas.Web.Controllers
             return JsonBackResult(ResultStatus.Success);
 
         }
+        public JsonBackResult EditArticle()
+        {
+            return JsonBackResult(ResultStatus.Success);
+        }
+
+        public JsonBackResult DestoryArticle()
+        {
+            return JsonBackResult(ResultStatus.Success);
+        }
     }
 }

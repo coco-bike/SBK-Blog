@@ -11,13 +11,13 @@ var page_now = 1;
  * go_to_page() 用户输入页码之后调用的函数，判断用户输入并调用重新计算页码显示
  */
 
-
 jQuery.support.cors = true;
 
+//分页
 function getMessage(page_now) {
     $.ajax({
         type: "post",
-        url: "  ",
+        url: "../../../Web/Home/GetArticleList",
         data: {
             "pagenow": page_now,
             "pagesize": size
@@ -32,7 +32,7 @@ function getMessage(page_now) {
             for (var i = 0; i < mydata.length; i++) {
                 s += " <li><div class='blog-a'><div class='recommend'" + " " + " id='" + data[i].Id + "'> <span>" +
                     data[i].ZanCount + "</span></div><div class='title'><h2>" + data[i].Title +
-                    "</h2></div></div><div class='summary'><p>" + data[i].Content + "</p><span><a href='javascript:void(0);' " +
+                    "</h2></div></div><div class='summary'><p>" + data[i].Summary + "</p><span><a href='javascript:void(0);' " +
                    "onclick='readarticle("+data[i].Id + ")'>阅读全文</a></span> </div><div class='bolg-block'><p>posted* "+
                     data[i].CreateTime+" 薄荷灬少年 阅读(" + data[i].WatchCount + ") 评论(" + data[i].CommentCount +")</p>";                
             }
@@ -47,6 +47,7 @@ $(function () {
     //获取文章列表
     getMessage(page_now);
 
+    //绑定点击事件
     $(".recommend").click(function () {
         var id = $(this).attr("id");
 
@@ -54,19 +55,19 @@ $(function () {
     });
 })
 
-
+//点赞功能
 function addZan(Id) {
     $.ajax({
         type: "Post",
-        url: "../../../Home/AddZan",
+        url: "../../../Web/Home/AddZan",
         data: {
-            'textid': Id
+            'id': Id
         },
         dataType: "dataType",
         success: function (data) {
             alert(data.Msg);
             var str;
-            str = "'#" + Id + "" + "span'";
+            str = "'#" + Id + " " + "span'";
             $(str).text() = data.data;
 
         },
