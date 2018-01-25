@@ -3,6 +3,7 @@
     height: 100px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     line-height: 1.8em;
     font-size: 20px;
 }
@@ -53,26 +54,25 @@
     color: rgb(49, 126, 243)
 }
 
-.bolg-commit {
-    margin-left: 210px;
+.bolg-comment {
     font-size: 20px;
 }
 
-.bolg-commit label {
+.bolg-comment label {
     border-bottom: 1px solid #8A8A8A;
     margin-top: 25px;
 }
 
-.bolg-commit ul li {
+.bolg-comment ul li {
     margin-top: 15px;
 }
 
-.commit-content {
+.comment-content {
     display: flex;
     flex-direction: column;
 }
 
-.commit-content textarea {
+.comment-content textarea {
     font-size: 25px;
     height: 300px;
     width: 500px;
@@ -99,7 +99,18 @@
     width: 80px;
     height: 30px;
 }
-.commitmessage p{
+.bolg-comment p{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.bolg-comment li{
+    border-bottom: 1px dashed black;
+}
+.zan{
+    height: 80px;
+    width: 70px;
+    padding-top: 6px;
+    background: url(../../../../Imgs/icon/upup.gif) no-repeat;
+    background-size: 70px 80px;
+    text-align: center;
 }

@@ -25,16 +25,17 @@ function getMessage(page_now) {
         dataType: "Json",
         success: function (data) {
             $('#article-list').empty();
-            max = data.totalpage;
+            var Totalcount = data.Data.TotalCount;
+            max= Math.ceil(Totalcount/size);
             var mydata = new Array()
-            mydata = data.listdata;
+            mydata = data.Data.List;
             var s = "";
             for (var i = 0; i < mydata.length; i++) {
-                s += " <li><div class='blog-a'><div class='recommend'" + " " + " id='" + data[i].Id + "'> <span>" +
-                    data[i].ZanCount + "</span></div><div class='title'><h2>" + data[i].Title +
-                    "</h2></div></div><div class='summary'><p>" + data[i].Summary + "</p><span><a href='javascript:void(0);' " +
-                   "onclick='readarticle("+data[i].Id + ")'>阅读全文</a></span> </div><div class='bolg-block'><p>posted* "+
-                    data[i].CreateTime+" 薄荷灬少年 阅读(" + data[i].WatchCount + ") 评论(" + data[i].CommentCount +")</p>";                
+                s += " <li><div class='blog-a'><div class='recommend'" + " " + " id='" + mydata[i].Id + "'> <span>" +
+                mydata[i].ZanCount + "</span></div><div class='title'><h2>" + mydata[i].Title +
+                    "</h2></div></div><div class='summary'><p>" + mydata[i].Summary + "</p><span><a href='javascript:void(0);' " +
+                   "onclick='readarticle("+mydata[i].Id + ")'>阅读全文</a></span> </div><div class='bolg-block'><p>posted* "+
+                   mydata[i].UpdateTime+" 薄荷灬少年 阅读(" + mydata[i].WatchCount + ") 评论(" + mydata[i].CommentCount +")</p>";                
             }
             $('#article-list').append(s);
             page.page_max = max;
@@ -67,7 +68,7 @@ function addZan(Id) {
         success: function (data) {
             alert(data.Msg);
             var str;
-            str = "'#" + Id + " " + "span'";
+            str = "#" + Id + " " + "span";
             $(str).text() = data.data;
 
         },
@@ -78,5 +79,5 @@ function addZan(Id) {
 }
 
 function readarticle(Id){
-    window.location.href="../../../Web/Home/Aritle?"+"id="+Id;
+    window.location.href="../../../Web/Home/Article?"+"id="+Id;
 }

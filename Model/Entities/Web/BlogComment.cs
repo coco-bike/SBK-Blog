@@ -25,6 +25,10 @@ namespace Model
         /// </summary>
         public DateTime CreateTime { get; set; }
         /// <summary>
+        /// 更新时间
+        /// </summary>
+        public DateTime UpdateTime { get; set; }
+        /// <summary>
         /// 状态：1启用，0禁用
         /// </summary>
         public int State { get; set; }

@@ -160,6 +160,9 @@
     <Compile Include="Areas\Admin\Models\InputList.cs" />
     <Compile Include="Areas\Admin\Models\AdminUserData.cs" />
     <Compile Include="Areas\Admin\Models\DefaultInputList.cs" />
+    <Compile Include="Areas\Web\Class\HomeArticleData.cs" />
+    <Compile Include="Areas\Web\Class\HomeArticleHtml.cs" />
+    <Compile Include="Areas\Web\Class\HomeCommentData.cs" />
     <Compile Include="Areas\Web\Controllers\AlbumController.cs" />
     <Compile Include="Areas\Web\Controllers\ArticleController.cs" />
     <Compile Include="Areas\Web\Controllers\CommentController.cs" />

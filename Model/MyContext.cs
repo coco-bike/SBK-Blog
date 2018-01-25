@@ -18,6 +18,7 @@ namespace Model
         {
             //自动创建表，如果Entity有改到就更新到表结构
             Database.SetInitializer<MyContext>(new MigrateDatabaseToLatestVersion<MyContext, ReportingDbMigrationsConfiguration>());
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public DbSet<UserModel> UserDalModals { get; set; }
@@ -40,7 +41,7 @@ namespace Model
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
             //配置1对多不联级删除
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
-            //配置多对对不联级删除
+            //配置多对多不联级删除
             modelBuilder.Configurations.Add(new AuthorityModelMap());
             modelBuilder.Configurations.Add(new RoleModelMap());
             modelBuilder.Configurations.Add(new UserModelMap());

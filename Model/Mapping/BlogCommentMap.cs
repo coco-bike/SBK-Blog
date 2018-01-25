@@ -23,6 +23,7 @@ namespace Model.Mapping
             this.Property(t => t.CommentId).IsRequired();
             this.Property(t => t.Content).IsRequired().HasMaxLength(50);
             this.Property(t => t.CreateTime).IsRequired();
+            this.Property(t => t.UpdateTime).IsRequired();
             this.Property(t => t.State).IsRequired();
             
             //配置关系

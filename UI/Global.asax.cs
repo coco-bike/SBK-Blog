@@ -119,8 +119,8 @@ namespace UI
                 //博客评论
                 IBlogCommentWebService blogCommentService = new BlogCommentWebService();
                 List<BlogComment> commentList = new List<BlogComment>(){
-                    new BlogComment(){Content="你好啊",CreateTime=DateTime.Now,State=1,CommentId=0,BlogArticle=article1,User=user11},
-                    new BlogComment(){Content="你好啊",CreateTime=DateTime.Now,State=1,CommentId=1,BlogArticle=article1,User=user11},
+                    new BlogComment(){Content="你好啊",UpdateTime=DateTime.Now,State=1,CommentId=0,BlogArticle=article1,User=user11,CreateTime=DateTime.Now},
+                    new BlogComment(){Content="你好啊",UpdateTime=DateTime.Now,State=1,CommentId=1,BlogArticle=article1,User=user11,CreateTime=DateTime.Now},
                 };
                 blogCommentService.AddRange(commentList);
 
