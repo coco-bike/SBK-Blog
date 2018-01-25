@@ -188,3 +188,17 @@ G:\Git\SBK-Bolg\IDal\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 G:\Git\SBK-Bolg\IDal\obj\Debug\IDal.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\IDal\obj\Debug\IDal.dll
 G:\Git\SBK-Bolg\IDal\obj\Debug\IDal.pdb
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\IDal.dll.config
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\IDal.dll
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\IDal.pdb
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\EntityFramework.dll
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\Model.dll
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\Model.pdb
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\EntityFramework.xml
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Git VersionControl\SBK-Blog\IDal\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\Git VersionControl\SBK-Blog\IDal\obj\Debug\IDal.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\IDal\obj\Debug\IDal.dll
+E:\Git VersionControl\SBK-Blog\IDal\obj\Debug\IDal.pdb

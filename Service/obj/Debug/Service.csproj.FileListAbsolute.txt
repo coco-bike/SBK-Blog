@@ -327,3 +327,27 @@ G:\Git\SBK-Bolg\Service\bin\Debug\zh-Hans\EntityFramework.resources.dll
 G:\Git\SBK-Bolg\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\Service\obj\Debug\Service.dll
 G:\Git\SBK-Bolg\Service\obj\Debug\Service.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Service.dll.config
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Service.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Service.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Dal.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\IDal.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\IService.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Model.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Session.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\EntityFramework.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\EntityFramework.Extended.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Autofac.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Autofac.Configuration.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Dal.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\IDal.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\IService.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Model.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Session.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\EntityFramework.xml
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\EntityFramework.Extended.xml
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\Autofac.xml
+E:\Git VersionControl\SBK-Blog\Service\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Git VersionControl\SBK-Blog\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\Service\obj\Debug\Service.dll
+E:\Git VersionControl\SBK-Blog\Service\obj\Debug\Service.pdb

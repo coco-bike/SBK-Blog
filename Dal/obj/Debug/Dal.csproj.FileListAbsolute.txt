@@ -253,3 +253,22 @@ G:\Git\SBK-Bolg\Dal\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 G:\Git\SBK-Bolg\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\Dal\obj\Debug\Dal.dll
 G:\Git\SBK-Bolg\Dal\obj\Debug\Dal.pdb
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\Dal.dll.config
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\Dal.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\Dal.pdb
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\EntityFramework.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\EntityFramework.Extended.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\EntityFramework.Extensions.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\IDal.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\Model.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\IDal.pdb
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\Model.pdb
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\EntityFramework.xml
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\EntityFramework.Extended.xml
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\Git VersionControl\SBK-Blog\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\Dal\obj\Debug\Dal.dll
+E:\Git VersionControl\SBK-Blog\Dal\obj\Debug\Dal.pdb

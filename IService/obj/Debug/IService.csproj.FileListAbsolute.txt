@@ -200,3 +200,19 @@ G:\Git\SBK-Bolg\IService\bin\Debug\zh-Hans\EntityFramework.resources.dll
 G:\Git\SBK-Bolg\IService\obj\Debug\IService.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\IService\obj\Debug\IService.dll
 G:\Git\SBK-Bolg\IService\obj\Debug\IService.pdb
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\IService.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\IService.pdb
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\Dal.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\IDal.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\Model.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\EntityFramework.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\EntityFramework.Extended.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\Dal.pdb
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\IDal.pdb
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\Model.pdb
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\EntityFramework.xml
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\EntityFramework.Extended.xml
+E:\Git VersionControl\SBK-Blog\IService\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Git VersionControl\SBK-Blog\IService\obj\Debug\IService.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\IService\obj\Debug\IService.dll
+E:\Git VersionControl\SBK-Blog\IService\obj\Debug\IService.pdb

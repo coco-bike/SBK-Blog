@@ -280,3 +280,25 @@ G:\Git\SBK-Bolg\Session\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dl
 G:\Git\SBK-Bolg\Session\obj\Debug\Session.csprojResolveAssemblyReference.cache
 G:\Git\SBK-Bolg\Session\obj\Debug\Session.dll
 G:\Git\SBK-Bolg\Session\obj\Debug\Session.pdb
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\Session.dll.config
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\Session.dll
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\Session.pdb
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\Autofac.Configuration.dll
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\Autofac.dll
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\Dal.dll
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\EntityFramework.dll
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\IDal.dll
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\Model.dll
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\EntityFramework.Extended.dll
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\Dal.pdb
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\IDal.pdb
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\EntityFramework.xml
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\Model.pdb
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\EntityFramework.Extended.xml
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Git VersionControl\SBK-Blog\Session\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\Git VersionControl\SBK-Blog\Session\obj\Debug\Session.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\Session\obj\Debug\Session.dll
+E:\Git VersionControl\SBK-Blog\Session\obj\Debug\Session.pdb
