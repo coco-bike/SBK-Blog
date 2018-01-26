@@ -17,7 +17,7 @@ namespace Model
         /// </summary>
         public string Content { get; set; }
         /// <summary>
-        /// 子评论（父评论为0）
+        /// 父评论（无父评论为0）
         /// </summary>
         public long CommentId { get; set; }
         /// <summary>

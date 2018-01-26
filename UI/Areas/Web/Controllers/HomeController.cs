@@ -158,9 +158,29 @@ namespace UI.Areas.Web.Controllers
         /// <param name="committext"></param>
         /// <param name="articleId"></param>
         /// <returns></returns>
-        public JsonBackResult PostComment(string committext, string articleId)
+        public JsonBackResult PostComment(string committext, string articleId,string commentfartherid)
         {
-            return JsonBackResult(ResultStatus.Success);
+            var articleid = Convert.ToInt32(articleId);
+            var comid = Convert.ToInt32(commentfartherid);
+            var article = this._blogArticleWebService.GetList(s => s.Id == articleid && s.State == 1).ToList().FirstOrDefault();
+            if (article == null)
+            {
+                return JsonBackResult(ResultStatus.Fail);
+            }
+            BlogComment com = new BlogComment();
+            com.CommentId = comid;
+            com.Content = committext;
+            com.CreateTime = DateTime.Now;
+            com.UpdateTime = DateTime.Now;
+            com.State = 1;
+            this._blogCommentWebService.Add(com);
+            article.BlogComments.Add(com);
+            var res =  this._blogArticleWebService.Update(article);
+            if (res > 0)
+            {
+                return JsonBackResult(ResultStatus.Success);
+            }
+            return JsonBackResult(ResultStatus.Fail);
         }
 
      

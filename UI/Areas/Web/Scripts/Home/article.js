@@ -48,10 +48,10 @@ function getCommit(){
 
                 for( var i=0;i<count;i++)
                 {
-                    str +="<li id='li"+mydata[i].Id+"'>"+"<div class='commitmessage'><p>"+(i+1)+"楼<span>"+" "+mydata[i].UpdateTime+" </span><span class='name'>"
+                    str +="<li id='li"+mydata[i].Id+"'>"+"<div class='commitmessage'><p>"+(i+1)+"楼 | <span>"+" "+mydata[i].UpdateTime+" </span><span class='name'>"
                     +mydata[i].UserData+" </span><a href='javascript:void(0);' onclick='replyCom("+mydata[i].Id
                     +")'>回复</a> <a href='javascript:void(0);' onclick='quoteCom("+mydata[i].Id+
-                    ")'>引用</a></p><p>"+mydata[i].Content+"</p></div></li>";
+                    ")'>引用</a></p><p id='content'>"+mydata[i].Content+"</p></div></li>";
                 }
                 $(".block-1 ul").append(str);                
             }else
@@ -64,6 +64,7 @@ function getCommit(){
     });
 }
 
+var fartherid=0;
 //提交评论
 function postCommit(){
     var commenttext = $("#commenttext").text();
@@ -71,15 +72,15 @@ function postCommit(){
     $.ajax({
         type: "Post",
         url: "../../../Web/Home/Postcomment",
-        data: {'commenttext':commenttext,'articleId':articleId},
+        data: {'commenttext':commenttext,'articleId':articleId,'commentfartherid':fartherid},
         dataType: "Json",
         success: function (data) {
             var str="";
             var mydata = data.Data;
-            str ="<li id='li"+mydata.Id+"'>"+"<div class='commitmessage'><p>"+i+"楼<span>"+" "+mydata.UpdateTime+" </span><span class='name'>"
-            +mydata[i].UserData+" </span><a href='javascript:void(0);' onclick='replyCom("+mydatadata.Id
+            str ="<li id='li"+mydata.Id+"'>"+"<div class='commitmessage'><p>"+mydata.th+"楼 | <span>"+" "+mydata.UpdateTime   +"</span><span class='name'>"
+            +mydata[i].UserData+"</span><a href='javascript:void(0);' onclick='replyCom("+mydatadata.Id
             +")'>回复</a> <a href='javascript:void(0);' onclick='quoteCom("+mydata.Id+
-            ")'>引用</a></p><p>"+mydata.Content+"</p></div></li>";
+            ")'>引用</a></p><p id='content'>"+mydata.Content+"</p></div></li>";
 
             $(".block-1 ul").append(str);
         }
@@ -88,15 +89,20 @@ function postCommit(){
 
 
 function replyCom(id){
-    $("#commenttext").text("");
-    window.location.href="#commenttext";
+    $("#commenttext").text(" ");
     var str ="#li"+id+" .name";
     var content="@"+$(str).text()+":";
     $("#commenttext").text(content);
+    window.location.href="#commenttext";
+    fartherid=id;
 }
 
 function quoteCom(id){
-
+    $("#commenttext").text(" ");
+    var str ="#li"+id+" .content";
+    var content ="引用:"+id+"楼<br />"+$(str).text()+"<br />我的评论:"
+    $("#commenttext").text(content);
+    window.location.href="#commenttext";
 }
 // var commentId="";
 // var commentContent="";
