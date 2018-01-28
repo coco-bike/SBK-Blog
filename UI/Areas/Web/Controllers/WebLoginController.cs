@@ -117,6 +117,7 @@ namespace UI.Areas.Web.Controllers
         /// <param name="name"></param>
         /// <param name="password"></param>
         /// <returns></returns>
+        [ValidateInput(false)]
         public JsonBackResult RegisterUserInfo(string email, string name, string password, string code)
         {
             var usercode = Session["VerifyCode"].ToString();

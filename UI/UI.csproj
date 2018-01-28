@@ -160,9 +160,10 @@
     <Compile Include="Areas\Admin\Models\InputList.cs" />
     <Compile Include="Areas\Admin\Models\AdminUserData.cs" />
     <Compile Include="Areas\Admin\Models\DefaultInputList.cs" />
-    <Compile Include="Areas\Web\Class\HomeArticleData.cs" />
-    <Compile Include="Areas\Web\Class\HomeArticleHtml.cs" />
-    <Compile Include="Areas\Web\Class\HomeCommentData.cs" />
+    <Compile Include="Areas\Web\Models\HomeArticleData.cs" />
+    <Compile Include="Areas\Web\Models\HomeArticleHtml.cs" />
+    <Compile Include="Areas\Web\Models\HomeCommentBackData.cs" />
+    <Compile Include="Areas\Web\Models\HomeCommentData.cs" />
     <Compile Include="Areas\Web\Controllers\AlbumController.cs" />
     <Compile Include="Areas\Web\Controllers\ArticleController.cs" />
     <Compile Include="Areas\Web\Controllers\CommentController.cs" />
@@ -3041,7 +3042,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Web\Models\" />
     <Folder Include="Content\Plugs\Ueditor\net\upload\" />
     <Folder Include="FileSave\" />
     <Folder Include="Files\" />

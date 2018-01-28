@@ -10,7 +10,7 @@
     $(".zan").click(function(){
 
         //增加点赞
-        addZan(Id);
+        addZan();
     })
 })
 
@@ -51,7 +51,7 @@ function getCommit(){
                     str +="<li id='li"+mydata[i].Id+"'>"+"<div class='commitmessage'><p>"+(i+1)+"楼 | <span>"+" "+mydata[i].UpdateTime+" </span><span class='name'>"
                     +mydata[i].UserData+" </span><a href='javascript:void(0);' onclick='replyCom("+mydata[i].Id
                     +")'>回复</a> <a href='javascript:void(0);' onclick='quoteCom("+mydata[i].Id+
-                    ")'>引用</a></p><p id='content'>"+mydata[i].Content+"</p></div></li>";
+                    ")'>引用</a></p><p id='content"+mydata[i].Id+"'>"+mydata[i].Content+"</p></div></li>";
                 }
                 $(".block-1 ul").append(str);                
             }else
@@ -66,9 +66,9 @@ function getCommit(){
 
 var fartherid=0;
 //提交评论
-function postCommit(){
-    var commenttext = $("#commenttext").text();
-    var articleId=$("#bolg-message span").attr("id");
+function postcomment(){
+    var commenttext = $("#commenttext").val();
+    var articleId=$(".zan").attr('id');
     $.ajax({
         type: "Post",
         url: "../../../Web/Home/Postcomment",
@@ -77,32 +77,34 @@ function postCommit(){
         success: function (data) {
             var str="";
             var mydata = data.Data;
-            str ="<li id='li"+mydata.Id+"'>"+"<div class='commitmessage'><p>"+mydata.th+"楼 | <span>"+" "+mydata.UpdateTime   +"</span><span class='name'>"
-            +mydata[i].UserData+"</span><a href='javascript:void(0);' onclick='replyCom("+mydatadata.Id
+            str ="<li id='li"+mydata.Id+"'>"+"<div class='commitmessage'><p>"+mydata.CommentCount+"楼 | <span>"+" "+mydata.UpdateTime   +"</span><span class='name'>"
+            +mydata.UserName+"</span><a href='javascript:void(0);' onclick='replyCom("+mydata.Id
             +")'>回复</a> <a href='javascript:void(0);' onclick='quoteCom("+mydata.Id+
-            ")'>引用</a></p><p id='content'>"+mydata.Content+"</p></div></li>";
+            ")'>引用</a></p><p id='content"+mydata.Id+"'>"+mydata.Content+"</p></div></li>";
 
             $(".block-1 ul").append(str);
+            $("#commenttext").val("");
         }
     });
 }
 
 
 function replyCom(id){
-    $("#commenttext").text(" ");
+    $("#commenttext").val("");
     var str ="#li"+id+" .name";
     var content="@"+$(str).text()+":";
-    $("#commenttext").text(content);
+    $("#commenttext").val(content);
     window.location.href="#commenttext";
     fartherid=id;
 }
 
 function quoteCom(id){
-    $("#commenttext").text(" ");
-    var str ="#li"+id+" .content";
-    var content ="引用:"+id+"楼<br />"+$(str).text()+"<br />我的评论:"
-    $("#commenttext").text(content);
+    $("#commenttext").val("");
+    var str ="#content"+id;
+    var content ="引用:"+id+"楼  "+$(str).text()+"  我的评论:"
+    $("#commenttext").val(content);
     window.location.href="#commenttext";
+    fartherid=0;
 }
 // var commentId="";
 // var commentContent="";
@@ -156,13 +158,10 @@ function quoteCom(id){
 // }
 
 
-// //取消修改的评论
-// function cancelCommit(){
-//     $("#committext").text()="";
-//     $("#submit").css("display","block");
-//     $("#save").css("display","none");
-//     $("#cancel").css("display","none");
-// }
+//取消修改的评论
+function cancelcomment(){
+    $("#commenttext").val("");
+}
 
 // //删除评论方法
 // function deleteCommit(Id){
@@ -180,19 +179,20 @@ function quoteCom(id){
 // }
 
 //增加点赞的方法
-function addZan(Id) {
+function addZan() {
+    var articleId=$(".zan").attr('id');
     $.ajax({
         type: "Post",
         url: "../../../Web/Home/AddZan",
         data: {
-            'id': Id
+            'id': articleId
         },
-        dataType: "dataType",
+        dataType: "Json",
         success: function (data) {
             alert(data.Msg);
             var str;
             str = "#bolg-message" + " span"+" div";
-            $(str).text() = data.data;
+            $(str).text(data.data);
 
         },
         error: function () {

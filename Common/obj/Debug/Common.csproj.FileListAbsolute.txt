@@ -189,6 +189,5 @@ E:\Git VersionControl\SBK-Blog\Common\bin\Debug\EntityFramework.SqlServer.xml
 E:\Git VersionControl\SBK-Blog\Common\bin\Debug\Newtonsoft.Json.xml
 E:\Git VersionControl\SBK-Blog\Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
 E:\Git VersionControl\SBK-Blog\Common\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
-E:\Git VersionControl\SBK-Blog\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 E:\Git VersionControl\SBK-Blog\Common\obj\Debug\Common.dll
 E:\Git VersionControl\SBK-Blog\Common\obj\Debug\Common.pdb

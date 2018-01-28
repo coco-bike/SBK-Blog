@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using Common;
 using IService;
 using Model;
-using UI.Areas.Web.Class;
+using UI.Areas.Web;
 using UI.Controllers.Base;
 
 namespace UI.Areas.Web.Controllers
@@ -158,50 +158,78 @@ namespace UI.Areas.Web.Controllers
         /// <param name="committext"></param>
         /// <param name="articleId"></param>
         /// <returns></returns>
-        public JsonBackResult PostComment(string committext, string articleId,string commentfartherid)
+        [HttpPost]
+        public JsonBackResult PostComment(string commenttext, string articleId, string commentfartherid)
         {
             var articleid = Convert.ToInt32(articleId);
-            var comid = Convert.ToInt32(commentfartherid);
+            var comid = Convert.ToInt32(commentfartherid);         
+            BlogComment com = new BlogComment();
+            var time=DateTime.Now;
+            com.CommentId = comid;
+            com.Content = commenttext;
+            com.CreateTime = time;
+            com.UpdateTime = time;
+            com.State = 1;
+
+            //文章
             var article = this._blogArticleWebService.GetList(s => s.Id == articleid && s.State == 1).ToList().FirstOrDefault();
+
+
+            //用户
+            var cookiesValue = Request.Cookies["sessionId"].Value;
+            UserModel user = new UserModel();
+            user = (UserModel)CacheHelper.Get(cookiesValue);
+
+            if (user == null)
+            {
+                return JsonBackResult(ResultStatus.Fail, "请尝试重新登陆");
+            }
+            var userid = user.Id;
+            var userdata = this._userWebService.GetList(s => s.Id == userid && s.State == 1).ToList().FirstOrDefault();
+
+
             if (article == null)
             {
                 return JsonBackResult(ResultStatus.Fail);
             }
-            BlogComment com = new BlogComment();
-            com.CommentId = comid;
-            com.Content = committext;
-            com.CreateTime = DateTime.Now;
-            com.UpdateTime = DateTime.Now;
-            com.State = 1;
+
+            //添加
+            com.BlogArticle = article;
+            com.User = userdata;
+          
+
             this._blogCommentWebService.Add(com);
-            article.BlogComments.Add(com);
-            var res =  this._blogArticleWebService.Update(article);
-            if (res > 0)
-            {
-                return JsonBackResult(ResultStatus.Success);
-            }
-            return JsonBackResult(ResultStatus.Fail);
+
+            HomeCommentBackData data = new HomeCommentBackData();
+
+            data.CommentCount = this._blogCommentWebService.GetList(s => s.State == 1).ToList().Count;
+            data.Content = commenttext;
+            data.Id = this._blogCommentWebService.GetList(s => s.State == 1).ToList().FindLast(s => s.State == 1).Id;
+            data.UpdateTime = time;
+            data.UserName = userdata.Name;
+
+            return JsonBackResult(ResultStatus.Success, data);
         }
 
      
 
-        /// <summary>
-        /// 保存修改的评论
-        /// </summary>
-        /// <returns></returns>
-        public JsonBackResult SaveEditComment()
-        {
-            return JsonBackResult(ResultStatus.Success);
-        }
+        ///// <summary>
+        ///// 保存修改的评论
+        ///// </summary>
+        ///// <returns></returns>
+        //public JsonBackResult SaveEditComment()
+        //{
+        //    return JsonBackResult(ResultStatus.Success);
+        //}
 
-        /// <summary>
-        /// 删除评论
-        /// </summary>
-        /// <returns></returns>
-        public JsonBackResult DestoryComment()
-        {
-            return JsonBackResult(ResultStatus.Success);
-        }
+        ///// <summary>
+        ///// 删除评论
+        ///// </summary>
+        ///// <returns></returns>
+        //public JsonBackResult DestoryComment()
+        //{
+        //    return JsonBackResult(ResultStatus.Success);
+        //}
         #endregion
     }
 }

@@ -34,9 +34,9 @@ function getMessage(page_now) {
             max = data.totalpage;
             var mydata = new Array();
             //获取文章列表
-            mydata = data.listdata;
+            mydata = data.data;
             //字符串置空
-            var s = " ";
+            var s = " ";           
             //循环添加表格列
             for (var i = 0; i < mydata.length; i++) {
                 s += "<tr><th>"+mydata[i].Title+"</th><th>"+mydata[i].Time+"</th><th>"
