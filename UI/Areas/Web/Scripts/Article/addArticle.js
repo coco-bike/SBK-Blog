@@ -17,29 +17,6 @@
 
 });
 
-function getclassifica() {
-    $.ajax({
-        type: "Get",
-        url: "../../../Article/GetArticleType",
-        data: "",
-        dataType: "Json",
-        success: function (data) {
-            count = data.length;
-            var str;
-            for (var i = 0; i < count; i++) {
-                str += "<label><input name='Fruit' type='radio' value=" 
-                + JSON.stringify(data[i].valueid) + " " + "/>" + data[i].name 
-                + "</label>"                
-            };
-            $(".article-classification").append(str);
-        },
-        error: function () {
-            alert("检查网络");
-        }
-    });
-}
-
-
 function cancelhtml() {
     var ue = UE.getEditor('container');
     ue.setContent() = "";
@@ -53,21 +30,49 @@ function posthtml() {
     var titletext = $("#input-title").val();
     var typeid = $("input:radio[name='Fruit']:checked").val();
     var checkbox1 = $("#checkbox-1").is(":checked");
-    var checkbox2 = $("#checkbox-2").is(":checked");
+    if(content!=null&&titletext!=null&&typeid!=null&&checkbox1!=null){
+        $.ajax({
+            type: "post",
+            url: "../../Web/Article/AddArticleContent",
+            data: {
+                'htmltext': content,
+                'title': titletext,
+                'typeid': typeid,
+                'summary':summary,
+                'checkbox1': checkbox1,
+            },
+            dataType: "Json",
+            success: function (data) {
+                alert(data.Msg);
+            }
+        });
+    }
+    else{
+        alert("内容不能留空");
+    }
+};
+
+function getclassifica(){
+    var url="../../Web/Article/GetArticleType"
     $.ajax({
-        type: "post",
-        url: "../../Article/AddArticleContent",
-        data: {
-            'htmltext': content,
-            'title': titletext,
-            'typeid': typeid,
-            'summary':summary,
-            'checkbox1': checkbox1,
-            'checkbox2': checkbox2
-        },
+        type: "Get",
+        url: url,
+        data: "",
         dataType: "Json",
         success: function (data) {
-            alert(data.Msg);
+            var mydata=data.Data;
+            count = mydata.length;
+            var str="";
+            for (var i = 0; i < count; i++) {
+                str += "<label><input name='Fruit' type='radio' value=" 
+                + mydata[i].Id + " " + "/>" + mydata[i].TypeName + "</label>"
+            };
+            $(".article-classification").append(str);
+
+        },
+        error: function () {
+            alert("检查网络");
         }
     });
 }
+

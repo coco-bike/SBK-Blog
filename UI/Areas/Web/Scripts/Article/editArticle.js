@@ -13,29 +13,31 @@
         cancelhtml();
     });
 
-    //获取分类
+    //获取分类成功之后获取文章内容
     getclassifica();
 
-    //获取html文本
-    gethtmlcontent();
 
 });
 
 function getclassifica(){
-    var url="../../../Article/GetArticleType"
+    var url="../../Web/Article/GetArticleType"
     $.ajax({
         type: "Get",
         url: url,
         data: "",
         dataType: "Json",
         success: function (data) {
-            count = data.length;
+            var mydata=data.Data;
+            count = mydata.length;
             var str="";
             for (var i = 0; i < count; i++) {
-                str = "<label><input name='Fruit' type='radio' value=" 
-                + data[i].valueid + " " + "/>" + data[i].name + "</label>"
+                str += "<label><input name='Fruit' type='radio' value=" 
+                + mydata[i].Id + " " + "/>" + mydata[i].TypeName + "</label>"
             };
             $(".article-classification").append(str);
+            //获取文章内容
+            gethtmlcontent();
+
         },
         error: function () {
             alert("检查网络");
@@ -52,23 +54,26 @@ function cancelhtml() {
 function posthtml() {
     var ue = UE.getEditor('container');
     var content = ue.getContent();
+    var summary = ue.getContentTxt().substring(0,100);
     var titletext = $("#input-title").val();
     var typeid = $("input:radio[name='Fruit']:checked").val();
     var checkbox1 = $("#checkbox-1").is(":checked");
-    var checkbox2 = $("#checkbox-1").is(":checked");
+    var articleid = $("#span-id").text();
     $.ajax({
         type: "post",
-        url: "../../Article/PostEditArticle",
+        url: "../../web/Article/PostEditArticle",
         data: {
+            'articleid':articleid,
             'htmltext': content,
             'title': titletext,
             'typeid': typeid,
             'checkbox1': checkbox1,
-            'checkbox2': checkbox2
+            'summary':summary
         },
         dataType: "Json",
         success: function (data) {
             alert(data.Msg);
+            window.location.href="../../Web/Management/Index"
         }
     });
 }
@@ -77,21 +82,24 @@ function gethtmlcontent(){
     var articleid = $("#span-id").text();
     $.ajax({
         type: "Post",
-        url: "../../../Article/GetEditArticleContent",
+        url: "../../Web/Article/GetEditArticleContent",
         data: {'id':articleid},
         dataType: "Json",
         success: function (data) {
+            var mydata = new Array();
+            mydata=data.Data;
             var ue = UE.getEditor('container');
-            ue.setContent(data.Content);
-            if(data.State==1){
+            ue.ready(function(){
+                ue.setContent(mydata.Content);
+            });
+            if(mydata.State==1){
                 var checkbox1text=true;
             }else{
                 var checkbox1text=false;
             }
-            $("#input-title").val()=data.Title;
-            $("input:radio[name='Fruit']").eq(data.Typeid-1).attr("checked","checked");
+            $("#input-title").val(mydata.Title);
+            $("input:radio[name='Fruit']").eq(mydata.BlogTypeId-1).attr("checked","checked");
             $("#checkbox-1").attr("checked",checkbox1text);
-            $("#checkbox-2").attr("checked",data.CommitState)
         }
     });
 }

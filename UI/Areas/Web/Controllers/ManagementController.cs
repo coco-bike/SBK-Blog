@@ -29,18 +29,18 @@ namespace UI.Areas.Web.Controllers
         #endregion
         public JsonBackResult GetArticleList(string pagenow, string pagesize)
         {
+            int totalCount;
+            var pageIndex = Convert.ToInt32(pagenow);
+            var pageSize = Convert.ToInt32(pagesize);
+            var articleList = this._blogArticleWebService.GetPagingList(pageIndex, pageSize, out totalCount, true, s => s.State == 1, s => s.Id).Select(t => new {
+            t.Title,
+            t.UpdateTime,
+            t.State,
+            t.WatchCount,
+            t.Id
+            }).ToList();
+            return JsonBackResult(ResultStatus.Success, new { TotalCount = totalCount, List = articleList });
 
-            return JsonBackResult(ResultStatus.Success);
-
-        }
-        public JsonBackResult EditArticle()
-        {
-            return JsonBackResult(ResultStatus.Success);
-        }
-
-        public JsonBackResult DestoryArticle()
-        {
-            return JsonBackResult(ResultStatus.Success);
         }
     }
 }

@@ -20,7 +20,7 @@ function getMessage(page_now) {
     //ajax请求
     $.ajax({
         type: "post",
-        url: "../../../Management/GetArticleList",
+        url: "../../Web/Management/GetArticleList",
         data: {
             "pagenow": page_now,
             "pagesize": size
@@ -31,15 +31,15 @@ function getMessage(page_now) {
             //表格置空
             $('#tbody').empty();
             //获取总页面
-            max = data.totalpage;
+            var max= Math.ceil(data.Data.TotalCount/size);
             var mydata = new Array();
             //获取文章列表
-            mydata = data.data;
+            mydata = data.Data.List;
             //字符串置空
             var s = " ";           
             //循环添加表格列
             for (var i = 0; i < mydata.length; i++) {
-                s += "<tr><th>"+mydata[i].Title+"</th><th>"+mydata[i].Time+"</th><th>"
+                s += "<tr><th>"+mydata[i].Title+"</th><th>"+mydata[i].UpdateTime+"</th><th>"
                 +mydata[i].State+"</th><th>"+mydata[i].WatchCount+"</th><th><a"+" "+"href='"
                 +"javascript:void(0);'"+" onclick='Edit("+mydata[i].Id+")'>"+"编辑</a></th><th><a"
                 +" "+"href='"+"javascript:void(0);'"+" onclick='Destory("+mydata[i].Id+")'>"
@@ -57,13 +57,13 @@ function getMessage(page_now) {
 
 //修改文章
 function Edit(Id){
-    var url = "../../../Article/EditArticle"
+    var url = "../../Web/Article/EditArticle"
     window.location.href =url+"?Id="+Id;
 }
 
 //删除文章
 function Destory(Id){
-    var url =  "../../../Article/DestoryArticle"
+    var url =  "../../Web/Article/DestoryArticle"
     $.ajax({
         type: "Post",
         url: url,

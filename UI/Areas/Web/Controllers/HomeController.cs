@@ -72,7 +72,7 @@ namespace UI.Areas.Web.Controllers
         /// <returns></returns>
         public JsonBackResult GetArticleList(string pagenow,string pagesize)
         {
-             int totalCount;
+            int totalCount;
             var pageIndex=Convert.ToInt32(pagenow);
             var pageSize = Convert.ToInt32(pagesize);
 
@@ -122,9 +122,17 @@ namespace UI.Areas.Web.Controllers
             articleData.Content = article.Content;
             articleData.Title = article.Title;
             articleData.UpdateTime = article.UpdateTime;
-            articleData.WatchCount = article.WatchCount;
+            articleData.WatchCount = article.WatchCount+1;
             articleData.ZanCount = article.ZanCount;
-            return JsonBackResult(ResultStatus.Success,articleData);
+
+            article.WatchCount += 1;
+
+            var res= this._blogArticleWebService.Update(article);
+            if (res > 0)
+            {
+                return JsonBackResult(ResultStatus.Success, articleData);
+            }
+            return JsonBackResult(ResultStatus.Fail);
 
         }
 
@@ -202,7 +210,7 @@ namespace UI.Areas.Web.Controllers
 
             HomeCommentBackData data = new HomeCommentBackData();
 
-            data.CommentCount = this._blogCommentWebService.GetList(s => s.State == 1).ToList().Count;
+            data.CommentCount = this._blogCommentWebService.GetList(s => s.State == 1&&s.BlogArticleId==articleid).ToList().Count;
             data.Content = commenttext;
             data.Id = this._blogCommentWebService.GetList(s => s.State == 1).ToList().FindLast(s => s.State == 1).Id;
             data.UpdateTime = time;
