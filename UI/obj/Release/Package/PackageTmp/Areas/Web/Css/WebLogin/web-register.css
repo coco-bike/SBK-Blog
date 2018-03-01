@@ -1,0 +1,18 @@
+﻿.register{
+    position: absolute;
+	z-index: 9999;
+	width: 480px;
+	height: 500px;
+	top: 200px;
+	left: 50%;
+	margin-left: -240px;
+	background-color:aliceblue;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}

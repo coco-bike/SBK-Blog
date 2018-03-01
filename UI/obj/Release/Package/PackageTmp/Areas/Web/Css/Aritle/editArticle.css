@@ -1,0 +1,27 @@
+﻿/*子页面的css*/
+.article-title {
+    padding-top: 15px;
+}
+
+.article-title input {
+    width: 100%;
+}
+
+.text-plug {
+    width: 100%;
+    height: 500px;
+}
+
+#container {
+    height: 500px;
+}
+
+.article-classification {
+    margin-top: 100px;
+}
+
+.advanced-setting {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+

@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @*@Scripts.Render("~/Content/jquery")
+    @Styles.Render("~/Content/easyUiCss")
+    @Styles.Render("~/Content/_Layout")
+    @Scripts.Render("~/Content/easyUiJs")
+    @Scripts.Render("~/Content/utils")
+    @Scripts.Render("~/Areas/Menu")*@
+    <link href="~/Content/EasyUi/css/icon.css" rel="stylesheet" />
+    <link href="~/Content/EasyUi/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/css/Layout.css" rel="stylesheet" />
+</head>
+<body class="easyui-layout">
+    <div data-options="region:'north'" style="height:74px" class="class-title">
+        <h1>songbike网络博客后台</h1>
+    </div>
+    <div data-options="region:'south',split:true" style="height:23px;">
+        <div class="footer"><p>Copyright © 2017 临界风行. All rights reserved.</p></div>
+    </div>
+    <div data-options="region:'west',split:true,collapsible:false" title="管理菜单" style="width:170px;">
+        <div class="easyui-accordion" data-options="fit:true,border:false">
+            <div title="人员管理" data-options="selected:true">
+                <div style="margin: 5px">
+                    <ul class="tree easyui-tree" data-options="animate:true,lines:true">
+                        <li data-options="iconCls:'icon-group'">
+                            <span>后台人员</span>
+                            <ul>
+                                <li data-options="iconCls:'icon-add'">
+                                    <span>人员总览</span>
+                                </li>
+                                @*<li data-options="iconCls:'icon-remove'">
+                                        <span>添加权限</span>
+                                    </li>
+                                    <li data-options="iconCls:'icon-save'">
+                                        <span>添加角色权限</span>
+                                    </li>*@
+                            </ul>
+                        </li>
+                        <li data-options="state:'closed',iconCls:'icon-joystick'">
+                            <span>前台人员</span>
+                            <ul>
+                                <li data-options="iconCls:'icon-joystick_add'">
+                                    <span>人员总览</span>
+                                </li>
+                                @*<li data-options="iconCls:'icon-joystick_add'">
+                                        <span>用户角色</span>
+                                    </li>
+                                    <li data-options="iconCls:'icon-joystick_add'">
+                                        <span>用户权限</span>
+                                    </li>
+                                    <li data-options="iconCls:'icon-joystick_add'">
+                                        <span>用户修改</span>
+                                    </li>*@
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div title="角色管理" data-options="selected:false">
+                <div style="margin: 5px">
+                    <ul class="tree easyui-tree" data-options="animate:true,lines:true">
+                        <li data-options="iconCls:'icon-group'">
+                            <span>前台角色</span>
+                            <ul>
+                                <li data-options="iconCls:'icon-add'">
+                                    <span>角色总览</span>
+                                </li>
+                                @*<li data-options="iconCls:'icon-remove'">
+                                        <span>大赛修改</span>
+                                    </li>
+                                    <li data-options="iconCls:'icon-save'">
+                                        <span>大赛回顾</span>
+                                    </li>*@
+                            </ul>
+                        </li>
+                        <li data-options="state:'closed',iconCls:'icon-joystick'">
+                            <span>后台角色</span>
+                            <ul>
+                                <li data-options="iconCls:'icon-joystick_add'">
+                                    <span>角色总览</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div title="权限管理" data-options="selected:false">
+                <div style="margin: 5px">
+                    <ul class="tree easyui-tree" data-options="animate:true,lines:true">
+                        <li data-options="iconCls:'icon-group'">
+                            <span>前台权限</span>
+                            <ul>
+                                <li data-options="iconCls:'icon-add'">
+                                    <span>权限总览</span>
+                                </li>
+                                @*<li data-options="iconCls:'icon-remove'">
+                                        <span>大赛修改</span>
+                                    </li>
+                                    <li data-options="iconCls:'icon-save'">
+                                        <span>大赛回顾</span>
+                                    </li>*@
+                            </ul>
+                        </li>
+                        <li data-options="state:'closed',iconCls:'icon-joystick'">
+                            <span>后台权限</span>
+                            <ul>
+                                <li data-options="iconCls:'icon-joystick_add'">
+                                    <span>权限总览</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-options="region:'center'">
+        <div id="tabs" class="easyui-tabs" data-options="tools:'#tab-tools'">
+            <div title="主页" data-options="iconCls:'icon-house'" style="padding: 10px; height: 100%;">
+                @RenderBody()
+                <div id="mm" class="easyui-menu" style="width: 150px;">
+                    <div id="refresh" data-options="iconCls:'icon-mini-refresh'">刷新</div>
+                    <div class="menu-sep"></div>
+                    <div id="close">关闭</div>
+                    <div id="closeall">全部关闭</div>
+                    <div id="closeother">除此之外全部关闭</div>
+                    <div class="menu-sep"></div>
+                    <div id="closeright">当前页右侧全部关闭</div>
+                    <div id="closeleft">当前页左侧全部关闭</div>
+                    <div class="menu-sep"></div>
+                    <div id="exit">退出</div>
+                </div>
+            </div>
+        </div>
+        <div id="tab-tools">
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" onclick="addTab()"></a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-remove'" onclick="removeTab()"></a>
+        </div>
+    </div>
+    <script src="~/Content/EasyUi/jquery.min.js"></script>
+    <script src="~/Content/EasyUi/jquery.easyui.min.js"></script>
+    <script src="~/Content/EasyUi/locale/easyui-lang-zh_CN.js"></script>
+    @*<script src="~/Scripts/utils.js"></script>*@
+    <script src="~/Areas/Admin/Scripts/admin-menu.js"></script>
+    <script src="~/Scripts/LeftMenuEvent.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

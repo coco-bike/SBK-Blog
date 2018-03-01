@@ -107,3 +107,4 @@ E:\Git VersionControl\SBK-Blog\Model\bin\Debug\zh-Hans\EntityFramework.resources
 E:\Git VersionControl\SBK-Blog\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 E:\Git VersionControl\SBK-Blog\Model\obj\Debug\Model.dll
 E:\Git VersionControl\SBK-Blog\Model\obj\Debug\Model.pdb
+E:\Git VersionControl\SBK-Blog\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

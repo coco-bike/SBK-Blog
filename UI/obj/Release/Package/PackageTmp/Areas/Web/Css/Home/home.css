@@ -1,0 +1,54 @@
+﻿.article-list li{
+    height: 300px;
+    width: 100%;
+    padding: 25px 50px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #dedede;
+}
+.article-list li:hover{
+    border: 1px solid rgb(12, 174, 219);
+}
+.recommend{
+    height: 52px;
+    width: 46px;
+    padding-top: 6px;
+    background: url(../../../../Imgs/icon/upup.gif) no-repeat;
+    text-align: center;
+}
+.bolg-block{
+    align-self:flex-end;
+    color: rgb(12, 174, 219);
+}
+.clear{
+    clear: both;
+}
+.title{
+   width: 600px;
+   display: flex;
+   align-items: center;
+   padding-left: 25px;
+}
+.title h2{
+    display: inline-block;
+}
+.blog-a{
+    display: flex;
+}
+
+.summary{
+    height: 120px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.summary p{
+    font-size: 20px;
+    line-height: 100%;
+}
+.summary span{
+    color: rgb(12, 174, 219);
+}

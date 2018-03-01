@@ -191,3 +191,4 @@ E:\Git VersionControl\SBK-Blog\Common\bin\Debug\zh-Hans\EntityFramework.resource
 E:\Git VersionControl\SBK-Blog\Common\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 E:\Git VersionControl\SBK-Blog\Common\obj\Debug\Common.dll
 E:\Git VersionControl\SBK-Blog\Common\obj\Debug\Common.pdb
+E:\Git VersionControl\SBK-Blog\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

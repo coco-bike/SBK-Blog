@@ -1,0 +1,35 @@
+﻿  .ck-container {
+            text-align: center;
+        }
+
+        .panel {
+            display: inline-block !important;
+        }
+
+        .block {
+            height: 200px;
+            width: 100%;
+        }
+
+        .ck-title {
+            color: rgba(2,117,216,1);
+        }
+
+        #dd {
+            display: none;
+        }
+
+        #ck-submit-2 {
+            display: none;
+        }
+        .ck-submit{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ck-middle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }

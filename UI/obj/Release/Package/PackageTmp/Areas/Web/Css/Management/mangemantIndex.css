@@ -1,0 +1,18 @@
+﻿.list-table{
+    width: 100%;
+    border: 1px solid blue;
+}
+.list-table thead tr th{
+    width: 16%;
+    border-right: 1px solid blue;
+}
+.list-table thead tr th:last-child{
+    border-right:none;
+}
+.list-table tbody tr th{
+    width: 16%;
+    border-right: 1px solid blue;
+}
+.list-table tbody tr th:last-child{
+    border-right:none;
+}

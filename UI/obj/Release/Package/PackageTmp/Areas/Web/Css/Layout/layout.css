@@ -1,0 +1,59 @@
+﻿body {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.title {
+	position: absolute;
+	z-index: 9999;
+	width: 800px;
+	height: 100px;
+	top: 50px;
+	left: 50%;
+	margin-left: -400px;
+	background-color: #1d7eb8;
+	opacity: 0.5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.title p {
+	font-size: 25px;
+	color: aliceblue;
+}
+
+.header canvas {
+	width: 100%;
+	height: auto/*默认全屏显示 可自己设置高度640px*/
+	;
+	display: inline-block;
+	vertical-align: baseline
+}
+
+.canvaszz {
+	/*用来解决视频右键菜单，用于视频上面的遮罩层*/
+	width: 100%;
+	background-image: url(../../../Content/Plugs/3DStart/in_top_bj.jpg);
+	height: 640px;
+	position: absolute;
+	z-index: 10;
+	filter: alpha(opacity=40);
+	-moz-opacity: 0.4;
+	-khtml-opacity: 0.4;
+	opacity: 0.4;
+}
+
+.audio {
+	/*设置音乐显示位置*/
+	width: 45px;
+	position: fixed;
+	top: 65px;
+	left: 94%;
+	z-index: 100;
+	filter: alpha(opacity=30);
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3;
+}

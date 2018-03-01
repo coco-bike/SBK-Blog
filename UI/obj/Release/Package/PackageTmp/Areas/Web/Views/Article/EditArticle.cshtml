@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "EditArticle";
+    Layout = "~/Areas/Web/Views/Shared/WebAdmin_Layout.cshtml";
+}
+
+@section MySection{ 
+<link href="~/Areas/Web/Css/Aritle/editArticle.css" rel="stylesheet" />
+}
+
+@section MySection3{
+    <script src="~/Content/Plugs/Ueditor/ueditor.config.js"></script>
+    <script src="~/Content/Plugs/Ueditor/ueditor.all.js"></script>
+    <script src="~/Content/Plugs/Ueditor/ueditor.parse.js"></script>
+    <script src="~/Areas/Web/Scripts/Article/editArticle.js"></script>
+}
+@section MySection1{
+    <ul>
+        <li><div class="double"></div><a href="../../Web/Article/EditArticle">添加新文章</a></li>
+    </ul>
+}
+@section MySection2{
+    <ul>
+        <li><div class="double"></div><a href="#">所有分类</a></li>
+        <li><div class="double"></div><a href="#">添加分类</a></li>
+        <li><div class="double"></div><a href="#">编辑分类</a></li>
+    </ul>
+}
+<div class="edit">
+    <p>编辑文章<span id="span-id">@ViewBag.Id</span></p>
+</div>
+<div class="article-title">
+    <label>标题</label>
+    <input id="input-title" type="text" />
+</div>
+<div class="text-plug">
+    <script id="container" name="content" type="text/plain">
+        
+    </script>
+</div>
+<div class="article-classification">
+    <label>标签:</label>
+</div>
+<div class="advanced-setting">
+    <label>是否发布</label>
+    <input id="checkbox-1" type="checkbox" checked="checked" />
+</div>
+
+<div class="release">
+    <input id="submit" type="button" value="保存">
+    <input id="cancel" type="button" value="清空">
+</div>

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <link href="~/Areas/Web/Css/Layout/webAdmin_Layout.css" rel="stylesheet" />
+    @RenderSection("MySection", required: false)
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="left-block">
+                <div class="title">
+                    <h1>SongBiKe网络博客后台</h1>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="top-block">
+
+                </div>
+                <div class="bottom-block">
+                    <ul class="nav">
+                        <li><a href="../../Web/Home/Index">文章</a></li>
+                        <li><a href="#">评论</a></li>
+                        <li><a href="#">相册</a></li>
+                        <li><a href="#">文件</a></li>
+                        <li><a href="#">设置</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="left">
+            <div class="operating">
+                <label>操作</label>
+
+                @RenderSection("MySection1", required: false)
+
+            </div>
+            <div class="classification">
+                <label>分类</label>
+
+                @RenderSection("MySection2", required: false)
+
+            </div>
+        </div>
+        <div class="center">
+            @RenderBody()
+        </div>
+        <div class="bottom">
+            <p>Copyright ©2018 薄荷少年</p>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    @RenderSection("MySection3", required: false)
+    <script src="~/Areas/Web/Scripts/Layout/webAdmin_Layout.js"></script>
+</body>
+</html>

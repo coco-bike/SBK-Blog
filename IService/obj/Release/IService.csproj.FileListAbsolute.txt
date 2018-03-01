@@ -32,3 +32,19 @@ G:\Git\DevelopmentFramework\IService\bin\Release\zh-Hans\EntityFramework.resourc
 G:\Git\DevelopmentFramework\IService\obj\Release\IService.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\IService\obj\Release\IService.dll
 G:\Git\DevelopmentFramework\IService\obj\Release\IService.pdb
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\IService.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\IService.pdb
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\Dal.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\IDal.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\Model.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\EntityFramework.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\EntityFramework.Extended.dll
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\Dal.pdb
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\IDal.pdb
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\Model.pdb
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\EntityFramework.xml
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\EntityFramework.Extended.xml
+E:\Git VersionControl\SBK-Blog\IService\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\Git VersionControl\SBK-Blog\IService\obj\Release\IService.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\IService\obj\Release\IService.dll
+E:\Git VersionControl\SBK-Blog\IService\obj\Release\IService.pdb

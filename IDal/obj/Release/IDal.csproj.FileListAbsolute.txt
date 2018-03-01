@@ -28,3 +28,17 @@ G:\Git\DevelopmentFramework\IDal\bin\Release\zh-Hans\EntityFramework.SqlServer.r
 G:\Git\DevelopmentFramework\IDal\obj\Release\IDal.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\IDal\obj\Release\IDal.dll
 G:\Git\DevelopmentFramework\IDal\obj\Release\IDal.pdb
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\IDal.dll.config
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\IDal.dll
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\IDal.pdb
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\EntityFramework.dll
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\EntityFramework.SqlServer.dll
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\Model.dll
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\Model.pdb
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\EntityFramework.xml
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\EntityFramework.SqlServer.xml
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\Git VersionControl\SBK-Blog\IDal\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\Git VersionControl\SBK-Blog\IDal\obj\Release\IDal.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\IDal\obj\Release\IDal.dll
+E:\Git VersionControl\SBK-Blog\IDal\obj\Release\IDal.pdb

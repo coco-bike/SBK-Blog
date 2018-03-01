@@ -27,3 +27,17 @@ G:\Git\DevelopmentFramework\Common\bin\Release\zh-Hans\EntityFramework.SqlServer
 G:\Git\DevelopmentFramework\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\Common\obj\Release\Common.dll
 G:\Git\DevelopmentFramework\Common\obj\Release\Common.pdb
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\Common.dll.config
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\Common.dll
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\Common.pdb
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\EntityFramework.dll
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\EntityFramework.SqlServer.dll
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\Newtonsoft.Json.dll
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\EntityFramework.xml
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\EntityFramework.SqlServer.xml
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\Newtonsoft.Json.xml
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\Git VersionControl\SBK-Blog\Common\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\Git VersionControl\SBK-Blog\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\Common\obj\Release\Common.dll
+E:\Git VersionControl\SBK-Blog\Common\obj\Release\Common.pdb

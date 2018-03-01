@@ -1,0 +1,26 @@
+﻿html, body {
+    min-width: 1200px;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "微软雅黑";
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+label{
+    margin-bottom: 0px;
+}
+p{
+    margin-bottom: 0px;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a {
+    text-decoration: none;
+}

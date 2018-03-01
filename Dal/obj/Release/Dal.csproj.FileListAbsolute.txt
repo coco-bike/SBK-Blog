@@ -38,3 +38,22 @@ G:\Git\DevelopmentFramework\Dal\bin\Release\zh-Hans\EntityFramework.SqlServer.re
 G:\Git\DevelopmentFramework\Dal\obj\Release\Dal.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\Dal\obj\Release\Dal.dll
 G:\Git\DevelopmentFramework\Dal\obj\Release\Dal.pdb
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\Dal.dll.config
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\Dal.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\Dal.pdb
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\EntityFramework.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\EntityFramework.Extended.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\EntityFramework.Extensions.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\EntityFramework.SqlServer.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\IDal.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\Model.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\IDal.pdb
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\Model.pdb
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\EntityFramework.xml
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\EntityFramework.Extended.xml
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\EntityFramework.SqlServer.xml
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\Git VersionControl\SBK-Blog\Dal\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\Git VersionControl\SBK-Blog\Dal\obj\Release\Dal.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\Dal\obj\Release\Dal.dll
+E:\Git VersionControl\SBK-Blog\Dal\obj\Release\Dal.pdb

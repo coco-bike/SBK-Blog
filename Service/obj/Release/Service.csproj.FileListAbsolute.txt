@@ -46,3 +46,26 @@ G:\Git\DevelopmentFramework\Service\bin\Release\zh-Hans\EntityFramework.resource
 G:\Git\DevelopmentFramework\Service\obj\Release\Service.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\Service\obj\Release\Service.dll
 G:\Git\DevelopmentFramework\Service\obj\Release\Service.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Service.dll.config
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Service.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Service.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Dal.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\IDal.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\IService.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Model.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Session.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\EntityFramework.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\EntityFramework.Extended.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Autofac.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Autofac.Configuration.dll
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Dal.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\IDal.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\IService.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Model.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\Session.pdb
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\EntityFramework.xml
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\EntityFramework.Extended.xml
+E:\Git VersionControl\SBK-Blog\Service\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\Git VersionControl\SBK-Blog\Service\obj\Release\Service.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\Service\obj\Release\Service.dll
+E:\Git VersionControl\SBK-Blog\Service\obj\Release\Service.pdb

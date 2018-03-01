@@ -20,7 +20,7 @@ namespace UI.Services
             MailHelper mail = new MailHelper();
             mail.MailServer = "smtp.qq.com";
             mail.MailboxName = "444503829@qq.com";
-            mail.MailboxPassword = "fplslqpringqbhhi";//开启QQ邮箱POP3/SMTP服务时给的授权码
+            mail.MailboxPassword = "qrluwfrgtdnzbjbd";//开启QQ邮箱POP3/SMTP服务时给的授权码
             //操作打开QQ邮箱->在账号下方点击"设置"->账户->POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务
             //obxxsfowztbideee为2872845261@qq的授权码
             mail.MailName = mailName;

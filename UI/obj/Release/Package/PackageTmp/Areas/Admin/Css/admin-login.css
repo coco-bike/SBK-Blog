@@ -1,0 +1,67 @@
+﻿  p, h1 {
+            margin: 0px;
+        }
+
+        .ck-container {
+            height: 910px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .ck-title {
+            text-align: center;
+            color: rgba(2,117,216,1);
+        }
+
+        .VerCode {
+            width: 80px;
+            height: 24px;
+        }
+
+        .login-form {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .ck-td {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .ck-td label{
+            width: 40%;
+        }
+        .ck-table {
+            width: 80%;
+        }
+
+        #code {
+            font-size: 12px;
+        }
+
+        .block {
+            height: 200px;
+            width: 100%;
+        }
+
+        .panel {
+            display: inline-block !important;
+        }
+
+        .ck-middle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ck-a{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ck-submit{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }

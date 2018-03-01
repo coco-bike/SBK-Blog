@@ -22,3 +22,27 @@ G:\Git\DevelopmentFramework\UI\bin\EntityFramework.Extended.xml
 G:\Git\DevelopmentFramework\UI\obj\Release\UI.csprojResolveAssemblyReference.cache
 G:\Git\DevelopmentFramework\UI\obj\Release\UI.dll
 G:\Git\DevelopmentFramework\UI\obj\Release\UI.pdb
+E:\Git VersionControl\SBK-Blog\UI\bin\Bin\Autofac.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\UI.dll.config
+E:\Git VersionControl\SBK-Blog\UI\bin\UI.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\UI.pdb
+E:\Git VersionControl\SBK-Blog\UI\bin\Common.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\IService.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\Model.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\Service.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\IDal.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\Session.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\Autofac.Configuration.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\Dal.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\EntityFramework.Extended.dll
+E:\Git VersionControl\SBK-Blog\UI\bin\Common.pdb
+E:\Git VersionControl\SBK-Blog\UI\bin\IService.pdb
+E:\Git VersionControl\SBK-Blog\UI\bin\Model.pdb
+E:\Git VersionControl\SBK-Blog\UI\bin\Service.pdb
+E:\Git VersionControl\SBK-Blog\UI\bin\IDal.pdb
+E:\Git VersionControl\SBK-Blog\UI\bin\Session.pdb
+E:\Git VersionControl\SBK-Blog\UI\bin\Dal.pdb
+E:\Git VersionControl\SBK-Blog\UI\bin\EntityFramework.Extended.xml
+E:\Git VersionControl\SBK-Blog\UI\obj\Release\UI.csprojResolveAssemblyReference.cache
+E:\Git VersionControl\SBK-Blog\UI\obj\Release\UI.dll
+E:\Git VersionControl\SBK-Blog\UI\obj\Release\UI.pdb

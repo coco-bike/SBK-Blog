@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "文章";
+    Layout = "~/Areas/Web/Views/Shared/Home_Layout.cshtml";
+}
+@section MySection{
+    <link href="~/Areas/Web/Css/Home/article.css" rel="stylesheet" />
+}
+@section MySection1{
+    <script src="~/Areas/Web/Scripts/Home/article.js"></script>
+}
+<div class="article-title">
+    <h2></h2>
+</div>
+<div class="article-text">
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+    <p>1111111111111111</p>
+</div>
+<div class="bolg-message" id="bolg-message">
+    <div class="head-pic">
+        <img src="~/Imgs/HeadPic/headpic-1.jpg" />
+        <div class="author">
+            <span class="name">薄荷少年</span>
+            <span class="fans">
+                <label>粉丝:1</label>
+            </span>
+        </div>
+    </div>
+    <span class="zan" id="@ViewBag.Id">
+       <div>1111</div>
+    </span>
+    <div class="bolg-block">
+        <p></p>
+    </div>
+</div>
+<div class="bolg-comment">
+    <div class="block-1">
+        <label>评论列表</label>
+        <ul>
+            <!-- <li>
+                <div class="commentmessage">
+                    <p>1楼 <span>2018-01-22 14:08</span><span>薄荷少年</span> <a href="javascript:void(0);" onclick="edit(1)">修改</a>
+                    <a href="javascript:void(0);" onclick="deleteCom(1)">删除</a></p>
+                    <p>122222222222222211212121212</p>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <div class="block-2">
+        <label>发表评论</label>
+        <div class="comment-content">
+            <p>评论内容:</p>
+            <textarea id="commenttext" name="commenttext"></textarea>
+        </div>
+        <input type="button" id="submit" onclick="postcomment()" value="提交评论">
+        <input type="button" id="cancel" onclick="cancelcomment()" value="取消修改">
+    </div>
+</div>
